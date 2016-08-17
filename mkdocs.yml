@@ -1,0 +1,6 @@
+site_name: Spring Content
+theme: spacelab
+pages:
+- Home: index.md
+- Getting Started with Spring Content: spring-content-fs-docs.md
+- Getting Started with REST: spring-content-rest-docs.md
