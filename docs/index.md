@@ -1,6 +1,6 @@
 # Spring-Content
 
-Extensions for Spring-Data that add primitives for handling BLOBs, in the same Developer-friendly way that you handle your structured data.
+Extensions for Spring-Data that add primitives for handling BLOBs (unstructured data) in the same Developer-friendly way that you handle your structured data.
 
 Spring Content provides modules for JPA, MongoDB, S3 and the Filesystem.
 
@@ -10,12 +10,13 @@ For a quick taste, look at the following domain object:
 
 ```
 @Entity
-@Content
 public class SopDocument {
 	
 	private @Id @GeneratedValue Long id;
 	private String title;
 	private String[] authors, keywords;
+	
+	// Spring Content managed attribute
 	private @ContentId String contentId
 
   	private SopDocument() {}
@@ -27,7 +28,7 @@ public class SopDocument {
 }
 ```
 
-This defines a simple JPA entity with a few structured data fields; title, authors and keywords and one BLOB field denoted by the @ContentId field.  The structured data fields are handled in the usual way through a `CrudRepository<SopDocument,String>` interface.  The BLOB field is handled separately with a ContentRepository interface:-
+This defines a simple JPA entity with a few structured data fields; title, authors and keywords and one Spring Content-managed; @ContentId.  The structured data fields are handled in the usual way through a `CrudRepository<SopDocument,String>` interface.  BLOB Content is handled separately with a ContentRepository interface:-
 
 ```
 public interface ContentRepository extends ContentRepository<SopDocument, String> {
