@@ -1,10 +1,28 @@
-# Spring-Content
+# Spring Content
 
 Extensions for Spring-Data that add primitives for handling BLOBs (unstructured data) in the same Developer-friendly way that you handle your structured data.
 
-Spring Content provides modules for JPA, MongoDB, S3 and the Filesystem.
+It makes it easy to create websites, content management systems and any other application that has to manage content such as images, documents and videos.
+
+### Features
+
+- Easily wrap content with metadata 
+- Transform content into different forms with its extensible Rendtion mechanism 
+- Fully integrated into Spring Data and Spring Data REST
+
+### Modules
+
+Spring Content provides modules for storing content in JPA, MongoDB, S3 and on the Filesystem.
 
 ## Quick Start
+
+```
+<dependency>
+    <groupId>com.github.paulcwarren</groupId>
+    <artifactId>spring-content-fs-boot-starter</artifactId>
+    <version>0.0.2</version>
+</dependency>
+```
 
 For a quick taste, look at the following domain object:
 
@@ -28,14 +46,18 @@ public class SopDocument {
 }
 ```
 
-This defines a simple JPA entity with a few structured data fields; title, authors and keywords and one Spring Content-managed; @ContentId.  The structured data fields are handled in the usual way through a `CrudRepository<SopDocument,String>` interface.  BLOB Content is handled separately with a ContentRepository interface:-
+This defines a simple JPA entity with a few structured data fields; title, authors and keywords and one Spring Content-managed; @ContentId.  
+
+The structured data fields are handled in the usual way through a `CrudRepository<SopDocument,String>` interface.  
+
+BLOB content is handled separately with a ContentRepository interface:-
 
 ```
-public interface ContentRepository extends ContentRepository<SopDocument, String> {
+public interface ContentRepository extends ContentStore<SopDocument, String> {
 }
 ```
 
-This interface extends Spring Content’s ContentRepository and defines the type (SopDocument) and the id type (String).  Put this code inside a Spring Boot application with spring-boot-starter-data-jpa and spring-content-jpa-boot-starter like this:
+This interface extends Spring Content’s ContentRepository and defines the type (SopDocument) and the id type (String).  Put this code inside a Spring Boot application with spring-boot-starter-data-jpa and spring-content-fs-boot-starter like this:
 
 ```
 @SpringBootApplication
@@ -47,10 +69,12 @@ public class MyApp {
 }
 ```
 
-Launch your app and Spring Content (having been autoconfigured by Boot) will automatically craft a concrete set of operations for handling content for this Entity:
+Launch your app and Spring Content (having been autoconfigured by Boot) will automatically craft a concrete set of operations for handling content associated with this Entity:
 
 - `setContent(S property, InputStream content)`
-- `unsetContent(S property)`
 - `InputStream getContent(S property)`
+- `unsetContent(S property)`
+
+To see more following out first [Getting Started Guide](spring-content-fs-docs.md).
 
 

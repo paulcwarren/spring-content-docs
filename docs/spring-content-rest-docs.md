@@ -18,8 +18,8 @@ You'll remove redundant code from the document list web application that we prod
 Before we begin let's set up our development environment:
 
 - Download and unzip the source repository for this guide, or clone it using Git: `git clone https://github.com/paulcwarren/spring-content-gettingstarted.git`
-- cd into spring-content-gettingstarted/spring-content-rest/complete
-- Jump ahead to `Define a simple entity`.
+- We are going to start form where we left of in the last Getting Started Guide so `cd` into `spring-content-gettingstarted/spring-content-fs/complete`
+- Move ahead to `Update dependencies`.
 
 When you’re finished, you can check your results against the code in `spring-content-gettingstarted/spring-content-rest/complete`.
  

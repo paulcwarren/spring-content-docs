@@ -85,7 +85,7 @@ In a project directory of your choosing, create the following subdirectory struc
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.emc.spring.content</groupId>
+			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-fs-boot-starter</artifactId>
 			<version>0.0.2</version>
 		</dependency>
