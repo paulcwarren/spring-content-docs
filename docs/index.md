@@ -20,7 +20,7 @@ Spring Content provides modules for storing content in JPA, MongoDB, S3 and on t
 <dependency>
     <groupId>com.github.paulcwarren</groupId>
     <artifactId>spring-content-fs-boot-starter</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 
@@ -75,6 +75,6 @@ Launch your app and Spring Content (having been autoconfigured by Boot) will aut
 - `InputStream getContent(S property)`
 - `unsetContent(S property)`
 
-To see more following out first [Getting Started Guide](spring-content-fs-docs.md).
+To see more following out first [Getting Started Guide](spring-content-fs-docs.md), or watch our [SpringOne 2016 talk](https://bit.ly/springone-vid).
 
 
