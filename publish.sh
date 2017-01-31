@@ -1,6 +1,6 @@
 #! /bin/bash
 
-mkdoc build --clean
+mkdocs build --clean
 pushd ../spring-content
   git stash
   git co gh-pages

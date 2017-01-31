@@ -4,13 +4,13 @@ Extensions for Spring-Data that add primitives for handling BLOBs (unstructured 
 
 It makes it easy to create websites, content management systems and any other application that has to manage content such as images, documents and videos.
 
-### Features
+#### Features
 
 - Easily wrap content with metadata 
 - Transform content into different forms with its extensible Rendtion mechanism 
 - Fully integrated into Spring Data and Spring Data REST
 
-### Modules
+#### Modules
 
 Spring Content provides modules for storing content in JPA, MongoDB, S3 and on the Filesystem.
 
@@ -76,5 +76,9 @@ Launch your app and Spring Content (having been autoconfigured by Boot) will aut
 - `unsetContent(S property)`
 
 To see more following out first [Getting Started Guide](spring-content-fs-docs.md), or watch our [SpringOne 2016 talk](https://bit.ly/springone-vid).
+
+## References
+
+- [Spring Content Filesystem](refs/fs-index.html)
 
 
