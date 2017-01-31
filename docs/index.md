@@ -1,8 +1,8 @@
 # Spring Content
 
-Extensions for Spring-Data that add primitives for handling BLOBs (unstructured data) in the same Developer-friendly way that you handle your structured data.
+Content management functionality for Spring.
 
-It makes it easy to create websites, content management systems and any other application that has to manage content such as images, documents and videos.
+Ideal for creating websites, content management systems and other applications that have to manage rich-content such as images, documents and videos.
 
 #### Features
 
