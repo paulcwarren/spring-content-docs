@@ -1,14 +1,15 @@
 # Spring Content
 
-Content management functionality for Spring.
+Cloud-Native Content Services for Spring.
 
-Ideal for creating websites, content management systems and other applications that have to manage rich-content such as images, documents and videos.
+Ideal for creating websites, content management systems and other applications that have to manage rich-content such as documents, images and video.
 
 #### Features
 
-- Easily wrap content with metadata 
-- Transform content into different forms with its extensible Rendtion mechanism 
-- Fully integrated into Spring Data and Spring Data REST
+- Standardized content access no matter where it lives  
+- Easily wrap content with metadata to add meaning  
+- Search inside content
+- Transform content into different formats with an extensible Rendtion mechanism 
 
 #### Modules
 
