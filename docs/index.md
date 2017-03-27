@@ -1,19 +1,26 @@
 # Spring Content
 
-Cloud-Native Content Services for Spring.
+Cloud-Native Headless Content Services for Spring.
 
-Ideal for creating websites, content management systems and other applications that have to manage rich-content such as documents, images and video.
+For creating services that manage content such as documents, images and digital assets such as video.  
+
+Build your own cloud-native, scale-out headless content services using the exact same components as the Enterprise Content Management (ECM) vendors such as Documentum and OpenText, without the hassle.   
 
 #### Features
 
 - Standardized content access no matter where it lives  
-- Easily wrap content with metadata to add meaning  
+- Associate content with metadata   
 - Search inside content
 - Transform content into different formats with an extensible Rendtion mechanism 
 
 #### Modules
 
-Spring Content provides modules for storing content in JPA, MongoDB, S3 and on the Filesystem.
+Spring Content provides modules for storing content in S3, Filesystem, MongoDB and JPA _(with DellEMC ECS coming soon)_ and provides modules for content search for Apache Solr _(with Amazon Elastic Search also coming soon)_. 
+
+#### Overview
+
+_Figure 1. understanding how Spring Content fits into the Spring eco-system_
+![spring-content-arch](spring-content-arch.jpg)
 
 ## Quick Start
 
@@ -47,18 +54,18 @@ public class SopDocument {
 }
 ```
 
-This defines a simple JPA entity with a few structured data fields; title, authors and keywords and one Spring Content-managed; @ContentId.  
+This defines a simple JPA entity with a few structured data fields; title, authors and keywords and one Spring Content-managed data field; @ContentId.  
 
 The structured data fields are handled in the usual way through a `CrudRepository<SopDocument,String>` interface.  
 
-BLOB content is handled separately with a ContentRepository interface:-
+Content is handled separately with a ContentStore interface:-
 
 ```
-public interface ContentRepository extends ContentStore<SopDocument, String> {
+public interface SopDocuemntContent extends ContentStore<SopDocument, String> {
 }
 ```
 
-This interface extends Spring Content’s ContentRepository and defines the type (SopDocument) and the id type (String).  Put this code inside a Spring Boot application with spring-boot-starter-data-jpa and spring-content-fs-boot-starter like this:
+This interface extends Spring Content’s ContentStore, defines the type (SopDocument) and the id type (String).  Put this code inside a Spring Boot application with `spring-boot-starter-data-jpa` and `spring-content-fs-boot-starter` like this:
 
 ```
 @SpringBootApplication
