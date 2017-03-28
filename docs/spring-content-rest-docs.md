@@ -16,7 +16,9 @@ You'll remove redundant code from the document list web application that we prod
 Before we begin let's set up our development environment:
 
 - Download and unzip the source repository for this guide, or clone it using Git: `git clone https://github.com/paulcwarren/spring-content-gettingstarted.git`
+
 - We are going to start form where we left of in the last Getting Started Guide so `cd` into `spring-content-gettingstarted/spring-content-fs/complete`
+
 - Move ahead to `Update dependencies`.
 
 When you’re finished, you can check your results against the code in `spring-content-gettingstarted/spring-content-rest/complete`.
@@ -84,7 +86,8 @@ Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
 		</plugins>
 	</build>
 
-</project>```
+</project>
+```
 
 ## Update File Entity
 
@@ -126,9 +129,9 @@ public class File {
 
 The `mimeType` attribute is updated with the Spring Content  `@MimeType` annotation so that Spring Content REST will update its value on our behalf.
 
-## Update FileContentRepository
+## Update FileContentStore
 
-So that we can perform simple CRUD operations, over a hypermedia-based API, update our `FileContentRepository` by annotating it with the `@ContentStoreRestResource` Spring Content REST annotation.
+So that we can perform simple CRUD operations, over a hypermedia-based API, update our `FileContentStore` by annotating it with the `@ContentStoreRestResource` Spring Content REST annotation.
 
 `src/main/java/gettingstarted/FileContentRepository.java`
 
@@ -140,7 +143,7 @@ import com.emc.spring.content.commons.repository.ContentStore;
 import internal.com.emc.spring.content.rest.annotations.ContentStoreRestResource;
 
 @ContentStoreRestResource
-public interface FileContentRepository extends ContentStore<File, String> {
+public interface FileContentStore extends ContentStore<File, String> {
 }
 ```
 
@@ -160,7 +163,7 @@ And then point your browser at:-
 
 and you should see something like this:-
 
-![Spring Content Webapp](spring-content-fs-webapp.png)
+<center>![Spring Content Webapp](spring-content-fs-webapp.png)</center>
 
 As you did in the previous tutorial, exercise the application by uploading a range of new files and viewing them.  You should see viewed files open as they did before.
 
@@ -172,7 +175,10 @@ Don't forget you can just changing the type of the spring-content boot-starter p
     
 Spring Content supports the following implementations:-
 
-- Spring Content Filesystem; stores content on the Filesystem (as used in this tutorial)
-- Spring Content S3; stores content in Amazon S3
+- Spring Content Filesystem; stores content as Files on the Filesystem (as used in this tutorial)
+
+- Spring Content S3; stores content as Objects in Amazon S3
+
 - Spring Content JPA; stores content as BLOBs in the database
-- Spring Content MongoDB; stores content in Mongo's GridFs
+
+- Spring Content MongoDB; stores content as Resources in Mongo's GridFS
