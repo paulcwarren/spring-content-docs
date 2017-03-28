@@ -136,7 +136,7 @@ The `mimeType` attribute is updated with the Spring Content  `@MimeType` annotat
 
 So that we can perform simple CRUD operations, over a hypermedia-based API, update our `FileContentStore` by annotating it with the `@ContentStoreRestResource` Spring Content REST annotation.
 
-`src/main/java/gettingstarted/FileContentRepository.java`
+`src/main/java/gettingstarted/FileContentStore.java`
 
 ```
 package gettingstarted;
