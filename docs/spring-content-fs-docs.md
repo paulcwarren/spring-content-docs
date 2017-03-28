@@ -1,4 +1,4 @@
-# Getting Started with Spring Content
+#### Getting Started with Spring Content
 
 ## What you'll build
 

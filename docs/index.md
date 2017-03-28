@@ -1,4 +1,4 @@
-# Spring Content
+#### Spring Content
 
 Cloud-Native Headless Content Services for Spring.
 
@@ -6,21 +6,48 @@ For creating services that manage content such as documents, images and digital 
 
 Build your own cloud-native, scale-out headless content services using the exact same components as the Enterprise Content Management (ECM) vendors such as Documentum and OpenText, without the hassle.   
 
-#### Features
+
+## Features
 
 - Standardized content access no matter where it lives  
-- Associate content with metadata   
-- Search inside content
-- Transform content into different formats with an extensible Rendtion mechanism 
 
-#### Modules
+- Content/metadata association   
 
-Spring Content provides modules for storing content in S3, Filesystem, MongoDB and JPA _(with DellEMC ECS coming soon)_ and provides modules for content search for Apache Solr _(with Amazon Elastic Search also coming soon)_. 
+- Content Search
 
-#### Overview
+- Content Transformation 
 
-_Figure 1. understanding how Spring Content fits into the Spring eco-system_
-![spring-content-arch](spring-content-arch.jpg)
+
+## Modules
+
+- Spring Content Commons - Core Spring concepts underpinning every Spring Content project.
+
+- Spring Content S3 - Store support for Amazon S3 objects
+
+- Spring Content Filesystem - Store support for the Filesystem files
+
+- Spring Content Mongo - Store support for Mongo's GridFS
+
+- Spring Content JPA - Store support for JPA BLOBs
+
+- Spring Content Renditions - Extensible rendition service for content transformations 
+
+- Spring Content Solr - Content indexing and search with Apache Solr
+
+- Spring Data REST - Exports Spring Content stores as hypermedia-driven RESTful resources.
+
+### Coming Soon 
+
+- Spring Content ECS - store support for DellEMC ECS
+
+- Spring Content ElasticSearch - Content indexing and search with Amzaon Elastic Search
+
+- Spring Content CMIS - CMIS-compliant entity model and REST API
+
+## Overview
+
+<center>![spring-content-arch](spring-content-arch.jpg)</center>
+<center>_Figure 1. understanding how Spring Content fits into the Spring eco-system_</center>
 
 ## Quick Start
 
@@ -80,13 +107,18 @@ public class MyApp {
 Launch your app and Spring Content (having been autoconfigured by Boot) will automatically craft a concrete set of operations for handling content associated with this Entity:
 
 - `setContent(S property, InputStream content)`
+
 - `InputStream getContent(S property)`
-- `unsetContent(S property)`
+ 
+- `unsetContent(S property)` 
 
 To see more following out first [Getting Started Guide](spring-content-fs-docs.md), or watch our [SpringOne 2016 talk](https://bit.ly/springone-vid).
 
-## References
+## Reference Documentation
 
-- [Spring Content Filesystem](refs/fs-index.html)
-
-
+| Module  |   |   |
+|---|---|---|
+| Spring Content S3 | Current  | Release  | 
+| Spring Content Filesystem | [Current](refs/fs-index.html)  |  Release | 
+| Spring Content Mongo  | Current  | Release  |  
+| Spring Content JPA  | Current  | Release  |  

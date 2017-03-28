@@ -1,5 +1,5 @@
 site_name: Spring Content
-theme: spacelab
+theme: mkdocs
 pages:
 - Home: index.md
 - Basics: spring-content-fs-docs.md

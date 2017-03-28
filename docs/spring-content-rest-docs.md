@@ -1,6 +1,4 @@
-# Getting Started with Spring Content REST
-
-This guide walks you through using Spring Content REST.
+#### Getting Started with Spring Content REST
 
 ## What you'll build
 
