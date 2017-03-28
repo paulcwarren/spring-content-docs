@@ -7,8 +7,11 @@ You'll remove redundant code from the document list web application that we prod
 ## What you'll need
 
 - About 30 minutes
+
 - A favorite text editor or IDE
+
 - JDK 1.8 or later
+
 - Maven 3.0+
 
 ## How to complete this guide
