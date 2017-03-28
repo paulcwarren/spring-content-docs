@@ -81,18 +81,18 @@ public class SopDocument {
 }
 ```
 
-This defines a simple JPA entity with a few structured data fields; title, authors and keywords and one Spring Content-managed data field; @ContentId.  
+This defines a simple JPA entity with a few structured data fields; title, authors and keywords and one Spring Content-managed data field; `@ContentId`.  
 
 The structured data fields are handled in the usual way through a `CrudRepository<SopDocument,String>` interface.  
 
 Content is handled separately with a ContentStore interface:-
 
 ```
-public interface SopDocuemntContent extends ContentStore<SopDocument, String> {
+public interface SopDocumentContent extends ContentStore<SopDocument, String> {
 }
 ```
 
-This interface extends Spring Content’s ContentStore, defines the type (SopDocument) and the id type (String).  Put this code inside a Spring Boot application with `spring-boot-starter-data-jpa` and `spring-content-fs-boot-starter` like this:
+This interface extends Spring Content’s `ContentStore`, defines the type (SopDocument) and the id type (String).  Put this code inside a Spring Boot application with `spring-boot-starter-data-jpa` and `spring-content-fs-boot-starter` like this:
 
 ```
 @SpringBootApplication
