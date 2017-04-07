@@ -119,6 +119,6 @@ To see more following out first [Getting Started Guide](spring-content-fs-docs.m
 | Module  |   |   |
 |---|---|---|
 | Spring Content S3 | Current  | Release  | 
-| Spring Content Filesystem | [Current](refs/fs-index.html)  |  Release | 
+| Spring Content Filesystem | [Current](refs/current/fs-index.html)  |  Release | 
 | Spring Content Mongo  | Current  | Release  |  
 | Spring Content JPA  | Current  | Release  |  
