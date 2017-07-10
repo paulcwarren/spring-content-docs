@@ -122,4 +122,4 @@ To see more following out first [Getting Started Guide](spring-content-fs-docs.m
 | Spring Content Filesystem | [Current](refs/master/fs-index.html)  |  [Lastest Release](refs/release/fs-index.html) | 
 | Spring Content Mongo  | [Current](refs/master/mongo-index.html)  | [Lastest Release](refs/release/mongo-index.html)  |  
 | Spring Content JPA  | [Current](refs/master/jpa-index.html)  | [Lastest Release](refs/release/jpa-index.html)  |  
-| Spring Content REST  | [Current](refs/master/jpa-index.html)  | Lastest Release |  
+| Spring Content REST  | [Current](refs/master/rest-index.html)  | Lastest Release |  
