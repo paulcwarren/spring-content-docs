@@ -64,7 +64,7 @@ In a project directory of your choosing, create the following subdirectory struc
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.3.RELEASE</version>
+		<version>1.5.4.RELEASE</version>
 	</parent>
 
 	<properties>
@@ -92,7 +92,7 @@ In a project directory of your choosing, create the following subdirectory struc
 		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-fs-boot-starter</artifactId>
-			<version>0.0.4</version>
+			<version>0.0.5</version>
 		</dependency>
 	</dependencies>
 
