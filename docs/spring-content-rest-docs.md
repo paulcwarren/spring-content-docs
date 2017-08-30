@@ -43,7 +43,7 @@ Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.4.RELEASE</version>
+		<version>1.5.6.RELEASE</version>
 	</parent>
 
 	<properties>
@@ -71,12 +71,12 @@ Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
 		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-fs-boot-starter</artifactId>
-			<version>0.0.4</version>
+			<version>0.0.6</version>
 		</dependency>
  		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-rest-boot-starter</artifactId>
-			<version>0.0.5</version>
+			<version>0.0.6</version>
 		</dependency>
  	</dependencies>
 
