@@ -9,7 +9,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 
 ## Features
 
-- Standardized content access no matter where it lives  
+- Standardized content access no matter where it is stored  
 
 - Content/metadata association   
 
@@ -22,7 +22,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 
 - Spring Content Commons - Core Spring concepts underpinning every Spring Content project.
 
-- Spring Content S3 - Store support for Amazon S3 objects
+- Spring Content S3 - Store support for Amazon S3 objects.  Also supports DellEMC ECS
 
 - Spring Content Filesystem - Store support for the Filesystem files
 
@@ -37,8 +37,6 @@ Build your own cloud-native, scale-out headless content services using the exact
 - Spring Data REST - Exports Spring Content stores as hypermedia-driven RESTful resources.
 
 ### Coming Soon 
-
-- Spring Content ECS - store support for DellEMC ECS
 
 - Spring Content ElasticSearch - Content indexing and search with Amzaon Elastic Search
 
@@ -55,7 +53,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 <dependency>
     <groupId>com.github.paulcwarren</groupId>
     <artifactId>spring-content-fs-boot-starter</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
 </dependency>
 ```
 
