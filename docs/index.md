@@ -116,8 +116,8 @@ To see more following out first [Getting Started Guide](spring-content-fs-docs.m
 
 | Module  |   |   |
 |---|---|---|
-| Spring Content S3 | [Current](refs/master/s3-index.html)  | [Lastest Release](refs/release/s3-index.html)  | 
-| Spring Content Filesystem | [Current](refs/master/fs-index.html)  |  [Lastest Release](refs/release/fs-index.html) | 
-| Spring Content Mongo  | [Current](refs/master/mongo-index.html)  | [Lastest Release](refs/release/mongo-index.html)  |  
-| Spring Content JPA  | [Current](refs/master/jpa-index.html)  | [Lastest Release](refs/release/jpa-index.html)  |  
-| Spring Content REST  | [Current](refs/master/rest-index.html)  | [Lastest Release](refs/release/rest-index.html) |  
+| Spring Content S3 | [Current](refs/snapshot/s3-index.html)  | [Lastest Release](refs/release/s3-index.html)  | 
+| Spring Content Filesystem | [Current](refs/snapshot/fs-index.html)  |  [Lastest Release](refs/release/fs-index.html) | 
+| Spring Content Mongo  | [Current](refs/snapshot/mongo-index.html)  | [Lastest Release](refs/release/mongo-index.html)  |  
+| Spring Content JPA  | [Current](refs/snapshot/jpa-index.html)  | [Lastest Release](refs/release/jpa-index.html)  |  
+| Spring Content REST  | [Current](refs/snapshot/rest-index.html)  | [Lastest Release](refs/release/rest-index.html) |  
