@@ -15,7 +15,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 
 - Content Search
 
-- Content Transformation 
+- Content Transformation
 
 
 ## Modules
@@ -30,15 +30,15 @@ Build your own cloud-native, scale-out headless content services using the exact
 
 - Spring Content JPA - Store support for JPA BLOBs
 
-- Spring Content Renditions - Extensible rendition service for content transformations 
+- Spring Content Renditions - Extensible rendition service for content transformations
 
 - Spring Content Solr - Content indexing and search with Apache Solr
 
 - Spring Data REST - Exports Spring Content stores as hypermedia-driven RESTful resources.
 
-### Coming Soon 
+### Coming Soon
 
-- Spring Content ElasticSearch - Content indexing and search with Amzaon Elastic Search
+- Spring Content ElasticSearch - Content indexing and search with Amazon Elastic Search
 
 - Spring Content CMIS - CMIS-compliant entity model and REST API
 
@@ -53,7 +53,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 <dependency>
     <groupId>com.github.paulcwarren</groupId>
     <artifactId>spring-content-fs-boot-starter</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.7</version>
 </dependency>
 ```
 
@@ -62,11 +62,11 @@ For a quick taste, look at the following domain object:
 ```
 @Entity
 public class SopDocument {
-	
+
 	private @Id @GeneratedValue Long id;
 	private String title;
 	private String[] authors, keywords;
-	
+
 	// Spring Content managed attribute
 	private @ContentId String contentId;
 
@@ -107,8 +107,8 @@ Launch your app and Spring Content (having been autoconfigured by Boot) will aut
 - `setContent(S property, InputStream content)`
 
 - `InputStream getContent(S property)`
- 
-- `unsetContent(S property)` 
+
+- `unsetContent(S property)`
 
 To see more following out first [Getting Started Guide](spring-content-fs-docs.md), or watch our [SpringOne 2016 talk](https://bit.ly/springone-vid).
 
@@ -116,8 +116,8 @@ To see more following out first [Getting Started Guide](spring-content-fs-docs.m
 
 | Module  |   |   |
 |---|---|---|
-| Spring Content S3 | [Current](refs/snapshot/s3-index.html)  | [Lastest Release](refs/release/s3-index.html)  | 
-| Spring Content Filesystem | [Current](refs/snapshot/fs-index.html)  |  [Lastest Release](refs/release/fs-index.html) | 
+| Spring Content S3 | [Current](refs/snapshot/s3-index.html)  | [Lastest Release](refs/release/s3-index.html)  |
+| Spring Content Filesystem | [Current](refs/snapshot/fs-index.html)  |  [Lastest Release](refs/release/fs-index.html) |
 | Spring Content Mongo  | [Current](refs/snapshot/mongo-index.html)  | [Lastest Release](refs/release/mongo-index.html)  |  
 | Spring Content JPA  | [Current](refs/snapshot/jpa-index.html)  | [Lastest Release](refs/release/jpa-index.html)  |  
 | Spring Content REST  | [Current](refs/snapshot/rest-index.html)  | [Lastest Release](refs/release/rest-index.html) |  

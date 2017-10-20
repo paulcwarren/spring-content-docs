@@ -33,8 +33,8 @@ When you’re finished, you can check your results against the code in `spring-c
 
 ## Build with Maven
 
-First you set up a basic build script. You can use any build system you like when building apps with Spring, but the code you need to work with [Maven](https://maven.apache.org/) is included here.  If you’re not familiar with Maven, refer to [Building Java Projects with Maven](http://spring.io/guides/gs/maven). 
- 
+First you set up a basic build script. You can use any build system you like when building apps with Spring, but the code you need to work with [Maven](https://maven.apache.org/) is included here.  If you’re not familiar with Maven, refer to [Building Java Projects with Maven](http://spring.io/guides/gs/maven).
+
 ### Create a directory structure
 
 In a project directory of your choosing, create the following subdirectory structure; for example, with `mkdir -p src/main/java/gettingstarted` on *nix systems:
@@ -92,7 +92,7 @@ In a project directory of your choosing, create the following subdirectory struc
 		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-fs-boot-starter</artifactId>
-			<version>0.0.6</version>
+			<version>0.0.7</version>
 		</dependency>
 	</dependencies>
 
@@ -108,7 +108,7 @@ In a project directory of your choosing, create the following subdirectory struc
 ```
 
 We add several dependencies:-
- 
+
 - Spring Boot Starter Web provides the web server framework
 
 - Spring Boot Starter Data JPA will provide a relational database to store metadata of our files.  In this case we are using the H2 in-memory database.
@@ -142,7 +142,7 @@ public class File {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	//metadata
 	private String name;
 	private Date created = new Date();
@@ -164,15 +164,15 @@ public class File {
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public Date getCreated() {
 		return created;
 	}
-	
+
 	public void setCreated(Date created) {
 		this.created = created;
 	}
@@ -286,19 +286,19 @@ public class FileContentController {
 
 	@Autowired private FileRepository filesRepo;
 	@Autowired private FileContentStore contentStore;
-	
+
 	@RequestMapping(value="/files/{fileId}", method = RequestMethod.PUT, headers="content-type!=application/hal+json")
-	public ResponseEntity<?> setContent(@PathVariable("fileId") Long id, @RequestParam("file") MultipartFile file) 
+	public ResponseEntity<?> setContent(@PathVariable("fileId") Long id, @RequestParam("file") MultipartFile file)
 			throws IOException {
 
 		File f = filesRepo.findOne(id);
 		f.setMimeType(file.getContentType());
-		
+
 		contentStore.setContent(f, file.getInputStream());
-		
+
 		// save updated content-related info
 		filesRepo.save(f);
-			
+
 		return new ResponseEntity<Object>(HttpStatus.OK);
 	}
 
@@ -316,11 +316,11 @@ public class FileContentController {
 ```
 Let's explain this class.  
 
-- It's a standard Spring Controller with two request mapped methods, one for setting content and the other for getting content. 
+- It's a standard Spring Controller with two request mapped methods, one for setting content and the other for getting content.
 
 - Both `setContent` and `getContent` methods inject themselves into the URI space of the `FileRepository`, namely `/files/{fileId}`, but handle all GETs and PUTs that are aplication/hal+json based; i.e. content.
 
-- We inject our `FileRepository` and our `FileContentStore`.  Respectively, Spring Boot will ensure real implementations are injected (based on what Spring Data and Spring Content modules are found on the class path). 
+- We inject our `FileRepository` and our `FileContentStore`.  Respectively, Spring Boot will ensure real implementations are injected (based on what Spring Data and Spring Content modules are found on the class path).
 
 - `setContent` uses the `FileRepository` to fetch the File entity  using the given `fileId` and then uses the `FileContentStore` to save the given file input stream.  
 
@@ -342,7 +342,7 @@ Now let's create a really simple angular web front-end for our document list.
   <body>
     <div ng-controller="FilesListController as filesList">
 	    <h1>Files</h1>
-	    
+
 	    <section style="display: table; width: 80%">
 		  <header style="display: table-row;">
 		    <div style="display: table-cell;">Name</div>
@@ -357,7 +357,7 @@ Now let's create a really simple angular web front-end for our document list.
 		    <div style="display: table-cell;"><label>{{file.summary}}</label></div>
 		  </div>
 		</section>
-	    
+
 	    <h2>New File</h2>
 	    <input type="file" id="file" name="file"/>
 	    <input type="summary" id="summary" name="summary" ng-model="filesList.summary" placeholder="Summary"/>
@@ -367,7 +367,7 @@ Now let's create a really simple angular web front-end for our document list.
 </html>
 ```
 
-This HTML presents a simple list of files using an `ng-repeat` directive and contains a simple form allowing new files to be uploaded. 
+This HTML presents a simple list of files using an `ng-repeat` directive and contains a simple form allowing new files to be uploaded.
 
 All the interesting code is in the code-behind file so add the following code behind to `src/main/resources/static/files.js`
 
@@ -375,8 +375,8 @@ All the interesting code is in the code-behind file so add the following code be
 angular.module('filesApp', [])
   .controller('FilesListController', function($http) {
     var filesList = this;
-    filesList.files = []; 
-    
+    filesList.files = [];
+
     filesList.getFilesList = function() {
         $http.get('/files/').
             success(function(data, status, headers, config) {
@@ -388,8 +388,8 @@ angular.module('filesApp', [])
 	            }
 	        });
 	    };
-    filesList.getFilesList(); 
-    
+    filesList.getFilesList();
+
     filesList.getHref = function(file) {
     	return file._links["self"].href
     };
@@ -397,7 +397,7 @@ angular.module('filesApp', [])
     filesList.upload = function() {
     	var f = document.getElementById('file').files[0];
     	var file = {name: f.name, summary: filesList.summary};
-    	
+
     	$http.post('/files/', file).
     		then(function(response) {
 	    		var fd = new FormData();
@@ -421,7 +421,7 @@ This angular controller has the following functions:-
 
 - `getFilesList` queries our `FileRepository` via its REST endpoint `files/` and populates `filesList.files` (presented by the `ng-repeat` directive in the HTML)
 
-- `getHref` returns a `file`'s content hyperlink `files/{fileId}` (that ultimately calls `FileContentController.getContent`) 
+- `getHref` returns a `file`'s content hyperlink `files/{fileId}` (that ultimately calls `FileContentController.getContent`)
 
 - `upload` uploads a new File by first `POST`ing to the `FileRepository` REST endpoints `/files` and once created  `PUT`ing the actual content to the Files content REST endpoint `files/{fileId}` (that ultimately calls `FileContentController.setContent`)   
 
@@ -454,7 +454,7 @@ If you are using Maven, you can run the application using `mvn spring-boot:run`.
 
 And then point your browser at:-
 
-`http://localhost:8080` 
+`http://localhost:8080`
 
 and you should see something like this:-
 
@@ -465,7 +465,7 @@ Exercise the application by uploading a range of new files and viewing them.  Vi
 ## Summary
 
 Congratulations! You’ve written a simple application that uses Spring Content to manage streams of binary data - without writing any specific file access code.  What's more by just changing the type of the spring-content boot-starter project on the classpath you can switch from a file-based implementation to a different implementation altogether.    
-    
+
 Spring Content supports the following implementations:-
 
 - Spring Content Filesystem; stores content as Files on the Filesystem (as used in this tutorial)

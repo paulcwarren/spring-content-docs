@@ -25,7 +25,7 @@ Before we begin let's set up our development environment:
 - Move ahead to `Update dependencies`.
 
 When you’re finished, you can check your results against the code in `spring-content-gettingstarted/spring-content-rest/complete`.
- 
+
 ### Update dependencies
 
 Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
@@ -35,11 +35,11 @@ Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
 ```
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  
+
   <groupId>com.emc.spring.content</groupId>
   <artifactId>spring-content-rest-gettingstarted</artifactId>
   <version>0.0.1</version>
-  
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -71,12 +71,12 @@ Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
 		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-fs-boot-starter</artifactId>
-			<version>0.0.6</version>
+			<version>0.0.7</version>
 		</dependency>
  		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-rest-boot-starter</artifactId>
-			<version>0.0.6</version>
+			<version>0.0.7</version>
 		</dependency>
  	</dependencies>
 
@@ -162,7 +162,7 @@ If you are using Maven, you can run the application using `mvn spring-boot:run`.
 
 And then point your browser at:-
 
-`http://localhost:8080` 
+`http://localhost:8080`
 
 and you should see something like this:-
 
@@ -170,12 +170,12 @@ and you should see something like this:-
 
 As you did in the previous tutorial, exercise the application by uploading a range of new files and viewing them.  You should see viewed files open as they did before.
 
-## Summary 
+## Summary
 
-Congratulations!  You've written a simple application that uses Spring Content and Spring Content REST to save objects with content to the file-system and to fetch them again using a hypermedia-based REST API - all without writing any implementation code to handle file access. 
+Congratulations!  You've written a simple application that uses Spring Content and Spring Content REST to save objects with content to the file-system and to fetch them again using a hypermedia-based REST API - all without writing any implementation code to handle file access.
 
 Don't forget you can just changing the type of the spring-content boot-starter project on the classpath you can switch from file-based to a different implementation.  Spring Content REST works seamlessly with all modules.
-    
+
 Spring Content supports the following implementations:-
 
 - Spring Content Filesystem; stores content as Files on the Filesystem (as used in this tutorial)
