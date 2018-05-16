@@ -321,7 +321,9 @@ public class FileContentController {
 		headers.set("Content-Type", 	f.getMimeType());
 		return new ResponseEntity<Object>(inputStreamResource, headers, HttpStatus.OK);
 	}
-}```
+}
+```
+
 Let's explain this class.  
 
 - It's a standard Spring Controller with two request mapped methods, one for setting content and the other for getting content.
@@ -443,7 +445,7 @@ the Files content REST endpoint `files/{fileId}` (that ultimately calls
 
 Our simple document list app is now complete.  All that remains is to add the usual Spring Boot Application class.
 
-`src/main/java/gettingstarted/SpringContentFsApplication.java`
+`src/main/java/gettingstarted/SpringContentApplication.java`
 
 ```
 package gettingstarted;
