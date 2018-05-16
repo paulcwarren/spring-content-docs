@@ -2,7 +2,8 @@
 
 ## What you'll build
 
-You'll remove redundant code from the document list web application that we produced in our first [Getting Started Guide](spring-content-fs-docs.md).
+You'll remove redundant code from the document list web application that
+we produced in our first [Getting Started Guide](spring-content-fs-docs.md).
 
 ## What you'll need
 
@@ -18,13 +19,16 @@ You'll remove redundant code from the document list web application that we prod
 
 Before we begin let's set up our development environment:
 
-- Download and unzip the source repository for this guide, or clone it using Git: `git clone https://github.com/paulcwarren/spring-content-gettingstarted.git`
+- Download and unzip the source repository for this guide, or clone it
+using Git: `git clone https://github.com/paulcwarren/spring-content-gettingstarted.git`
 
-- We are going to start form where we left of in the last Getting Started Guide so `cd` into `spring-content-gettingstarted/spring-content-fs/complete`
+- We are going to start form where we left of in the last Getting Started
+Guide so `cd` into `spring-content-gettingstarted/spring-content-fs/complete`
 
 - Move ahead to `Update dependencies`.
 
-When you’re finished, you can check your results against the code in `spring-content-gettingstarted/spring-content-rest/complete`.
+When you’re finished, you can check your results against the code in
+`spring-content-gettingstarted/spring-content-rest/complete`.
 
 ### Update dependencies
 
@@ -96,7 +100,7 @@ Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
 
 Add the `@MimeType` marker annotation to our Entity.
 
-`src/main/java/gettingstarted/FileEntity.java`
+`src/main/java/gettingstarted/File.java`
 
 ```
 package gettingstarted;
@@ -108,9 +112,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.emc.spring.content.commons.annotations.Content;
-import com.emc.spring.content.commons.annotations.ContentId;
-import com.emc.spring.content.commons.annotations.ContentLength;
+import org.springframework.content.commons.annotations.ContentId;
+import org.springframework.content.commons.annotations.ContentLength;
+import org.springframework.content.commons.annotations.MimeType;
 
 @Entity
 public class File {
@@ -126,37 +130,43 @@ public class File {
 	@ContentLength private long contentLength;
 	@MimeType private String mimeType = "text/plain";
 
-	...Getters/Setters...
+    ...Getters and setters...
 }
 ```
 
-The `mimeType` attribute is updated with the Spring Content  `@MimeType` annotation so that Spring Content REST will update its value on our behalf.
+The `mimeType` attribute is updated with the Spring Content  `@MimeType`
+annotation so that Spring Content REST will update its value on our behalf.
 
 ## Update FileContentStore
 
-So that we can perform simple CRUD operations, over a hypermedia-based API, update our `FileContentStore` by annotating it with the `@ContentStoreRestResource` Spring Content REST annotation.
+So that we can perform simple CRUD operations, over a hypermedia-based
+API, update our `FileContentStore` by annotating it with the
+`@StoreRestResource` Spring Content REST annotation.
 
 `src/main/java/gettingstarted/FileContentStore.java`
 
 ```
 package gettingstarted;
 
-import com.emc.spring.content.commons.repository.ContentStore;
+import org.springframework.content.commons.repository.ContentStore;
+import org.springframework.content.rest.StoreRestResource;
 
-import internal.com.emc.spring.content.rest.annotations.ContentStoreRestResource;
-
-@ContentStoreRestResource
+@StoreRestResource
 public interface FileContentStore extends ContentStore<File, String> {
 }
 ```
 
 ## Remove FileContentController
 
-Having made the above updates we can remove our `FileContentController` as it is now surplus to requirements.   Spring Content REST will provide these endpoints for us.
+Having made the above updates we can remove our `FileContentController`
+as it is now surplus to requirements.   Spring Content REST will provide
+these endpoints for us.
 
 ## Build an executable JAR
 
-If you are using Maven, you can run the application using `mvn spring-boot:run`.  Or you can build the JAR file with `mvn clean package` and run the JAR by typing:
+If you are using Maven, you can run the application using `mvn spring-boot:run`.
+Or you can build the JAR file with `mvn clean package` and run the JAR
+by typing:
 
 `java -jar target/gettingstarted-spring-content-rest-0.0.1.jar`
 
@@ -168,17 +178,25 @@ and you should see something like this:-
 
 <center>![Spring Content Webapp](spring-content-fs-webapp.png)</center>
 
-As you did in the previous tutorial, exercise the application by uploading a range of new files and viewing them.  You should see viewed files open as they did before.
+As you did in the previous tutorial, exercise the application by uploading
+a range of new files and viewing them.  You should see viewed files open
+as they did before.
 
 ## Summary
 
-Congratulations!  You've written a simple application that uses Spring Content and Spring Content REST to save objects with content to the file-system and to fetch them again using a hypermedia-based REST API - all without writing any implementation code to handle file access.
+Congratulations!  You've written a simple application that uses Spring
+Content and Spring Content REST to save objects with content to the
+file-system and to fetch them again using a hypermedia-based REST API -
+all without writing any implementation code to handle file access.
 
-Don't forget you can just changing the type of the spring-content boot-starter project on the classpath you can switch from file-based to a different implementation.  Spring Content REST works seamlessly with all modules.
+Don't forget you can just changing the type of the spring-content boot-starter
+project on the classpath you can switch from file-based to a different
+implementation.  Spring Content REST works seamlessly with all modules.
 
 Spring Content supports the following implementations:-
 
-- Spring Content Filesystem; stores content as Files on the Filesystem (as used in this tutorial)
+- Spring Content Filesystem; stores content as Files on the Filesystem
+(as used in this tutorial)
 
 - Spring Content S3; stores content as Objects in Amazon S3
 
