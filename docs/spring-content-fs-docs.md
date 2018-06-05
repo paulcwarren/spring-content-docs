@@ -64,7 +64,7 @@ In a project directory of your choosing, create the following subdirectory struc
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.10.RELEASE</version>
+		<version>2.0.2.RELEASE</version>
 	</parent>
 
 	<properties>
@@ -92,7 +92,7 @@ In a project directory of your choosing, create the following subdirectory struc
 		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-fs-boot-starter</artifactId>
-			<version>0.0.11</version>
+			<version>0.1.0</version>
 		</dependency>
 	</dependencies>
 
@@ -300,26 +300,32 @@ public class FileContentController {
 	public ResponseEntity<?> setContent(@PathVariable("fileId") Long id, @RequestParam("file") MultipartFile file)
 			throws IOException {
 
-		File f = filesRepo.findOne(id);
-		f.setMimeType(file.getContentType());
+		Optional<File> f = filesRepo.findById(id);
+		if (f.isPresent()) {
+			f.get().setMimeType(file.getContentType());
 
-		contentStore.setContent(f, file.getInputStream());
+			contentStore.setContent(f.get(), file.getInputStream());
 
-		// save updated content-related info
-		filesRepo.save(f);
+			// save updated content-related info
+			filesRepo.save(f.get());
 
-		return new ResponseEntity<Object>(HttpStatus.OK);
+			return new ResponseEntity<Object>(HttpStatus.OK);
+		}
+		return null;
 	}
 
 	@RequestMapping(value="/files/{fileId}", method = RequestMethod.GET)
 	public ResponseEntity<?> getContent(@PathVariable("fileId") Long id) {
 
-		File f = filesRepo.findOne(id);
-		InputStreamResource inputStreamResource = new InputStreamResource(contentStore.getContent(f));
-		HttpHeaders headers = new HttpHeaders();
-		headers.setContentLength(f.getContentLength());
-		headers.set("Content-Type", 	f.getMimeType());
-		return new ResponseEntity<Object>(inputStreamResource, headers, HttpStatus.OK);
+		Optional<File> f = filesRepo.findById(id);
+		if (f.isPresent()) {
+			InputStreamResource inputStreamResource = new InputStreamResource(contentStore.getContent(f.get()));
+			HttpHeaders headers = new HttpHeaders();
+			headers.setContentLength(f.get().getContentLength());
+			headers.set("Content-Type", f.get().getMimeType());
+			return new ResponseEntity<Object>(inputStreamResource, headers, HttpStatus.OK);
+		}
+		return null;
 	}
 }
 ```
