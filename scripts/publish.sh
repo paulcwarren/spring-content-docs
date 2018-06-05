@@ -6,6 +6,7 @@ pushd ../spring-content
   git checkout gh-pages
   git clean -ffd
   cp -R ../spring-content-docs/site/* .
+  git solo pw
   git add .
   git commit -m "Docs update"
   git pull -r
