@@ -53,7 +53,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 <dependency>
     <groupId>com.github.paulcwarren</groupId>
     <artifactId>spring-content-fs-boot-starter</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
 </dependency>
 ```
 
