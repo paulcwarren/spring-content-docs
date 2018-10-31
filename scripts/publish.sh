@@ -1,5 +1,12 @@
 #! /bin/bash
 
+author=$(git config --get user.name)
+if [ "$author" != "Paul Warren" ]
+  then
+    echo "git author not set ('git solo pw')"
+    exit 1
+fi
+
 mkdocs build --clean
 pushd ../spring-content
   git stash
