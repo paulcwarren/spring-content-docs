@@ -18,6 +18,16 @@ Build your own cloud-native, scale-out headless content services using the exact
 - Content Transformation
 
 
+## Videos
+
+- [An Overview of Spring Content](https://www.youtube.com/watch?v=pbDaONWWT3s)
+
+- [SpringOne 2016 - Persistence Arrives on Cloud Foundry](https://www.youtube.com/watch?v=VisP5ebZoWw)
+
+- [SpringOne 2017 - A Guided Tour From Code Base To Platform 11:28 - 21:58](https://www.youtube.com/watch?v=YtNvHTwHhRY&t=0s&list=PLAdzTan_eSPQ2uPeB0bByiIUMLVAhrPHL&index=93) 
+
+- [SpringOne 2018 - From Content Management to Content Services with Spring Boot, Data and Content](https://www.youtube.com/watch?v=qyIMHWR40eA)
+
 ## Modules
 
 - Spring Content Commons - Core Spring concepts underpinning every Spring Content project.
@@ -53,7 +63,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 <dependency>
     <groupId>com.github.paulcwarren</groupId>
     <artifactId>spring-content-fs-boot-starter</artifactId>
-    <version>0.3.0</version>
+    <version>0.4.0</version>
 </dependency>
 ```
 
