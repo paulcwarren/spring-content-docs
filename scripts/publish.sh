@@ -7,18 +7,21 @@ if [ "$author" != "Paul Warren" ]
     exit 1
 fi
 
+pwd=$PWD
+
 mkdocs build --clean
-pushd ../spring-content
-  git stash
+
+tmpdir=`mktemp -d 2>/dev/null || mktemp -d -t 'sctmpdir'`
+mkdir -p $tmpdir
+
+git clone https://github.com/paulcwarren/spring-content $tmpdir
+pushd $tmpdir
   git checkout gh-pages
-  git clean -ffd
-  cp -R ../spring-content-docs/site/* .
+  cp -R $pwd/site/* .
   git add .
   git commit -m "Docs update"
   git pull -r
   git push origin gh-pages 
-  git checkout master
-  git reset --hard HEAD
-  git stash pop
 popd
 
+rm -rf $tmpdir
