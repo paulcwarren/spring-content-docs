@@ -44,7 +44,11 @@ Build your own cloud-native, scale-out headless content services using the exact
 
 - Spring Content Solr - Content indexing and search with Apache Solr
 
-- Spring Data REST - Exports Spring Content stores as hypermedia-driven RESTful resources.
+- Spring Versions Commons - Locking and versioning semantics for Entities and associated content
+
+- Spring Versions JPA - JPA-based implementation of locking and versioning
+
+- Spring Data REST - Exports Spring Content stores as hypermedia-driven RESTful resources
 
 ### Coming Soon
 
@@ -63,7 +67,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 <dependency>
     <groupId>com.github.paulcwarren</groupId>
     <artifactId>spring-content-fs-boot-starter</artifactId>
-    <version>0.5.0</version>
+    <version>0.6.0</version>
 </dependency>
 ```
 
@@ -129,5 +133,7 @@ To see more following out first [Getting Started Guide](spring-content-fs-docs.m
 | Spring Content S3 | [Current](refs/snapshot/s3-index.html)  | [Lastest Release](refs/release/s3-index.html)  |
 | Spring Content Filesystem | [Current](refs/snapshot/fs-index.html)  |  [Lastest Release](refs/release/fs-index.html) |
 | Spring Content Mongo  | [Current](refs/snapshot/mongo-index.html)  | [Lastest Release](refs/release/mongo-index.html)  |  
+| Spring  REST  | [Current](refs/snapshot/rest-index.html)  | [Lastest Release](refs/release/rest-index.html) |  
 | Spring Content JPA  | [Current](refs/snapshot/jpa-index.html)  | [Lastest Release](refs/release/jpa-index.html)  |  
+| Spring Versions JPA  | [Current](refs/snapshot/jpaversions-index.html)  | [Lastest Release](refs/release/jpaversions-index.html)  |  
 | Spring Content REST  | [Current](refs/snapshot/rest-index.html)  | [Lastest Release](refs/release/rest-index.html) |  
