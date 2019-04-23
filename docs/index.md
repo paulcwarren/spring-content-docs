@@ -1,22 +1,21 @@
 #### Spring Content
 
-Cloud-Native Headless Content Services for Spring.
+Cloud-Native Content Services for Spring.
 
-For creating services that manage content such as documents, images and digital assets such as video.  
+For creating services that manage content such as documents, images and movies.  
 
 Build your own cloud-native, scale-out headless content services using the exact same components as the Enterprise Content Management (ECM) vendors such as Documentum and OpenText, without the hassle.   
-
-
 ## Features
 
 - Standardized content access no matter where it is stored  
 
 - Content/metadata association   
 
-- Content Search
+- Content search
 
-- Content Transformation
+- Content transformation
 
+- REST or CMIS endpoints
 
 ## Videos
 
@@ -50,11 +49,11 @@ Build your own cloud-native, scale-out headless content services using the exact
 
 - Spring Data REST - Exports Spring Content stores as hypermedia-driven RESTful resources
 
+- Spring Content CMIS - Exports Spring Content stores through the CMIS browser bindings
+
 ### Coming Soon
 
 - Spring Content ElasticSearch - Content indexing and search with Amazon Elastic Search
-
-- Spring Content CMIS - CMIS-compliant entity model and REST API
 
 ## Overview
 
@@ -124,7 +123,7 @@ Launch your app and Spring Content (having been autoconfigured by Boot) will aut
 
 - `unsetContent(S property)`
 
-To see more following out first [Getting Started Guide](spring-content-fs-docs.md), or watch our [SpringOne 2016 talk](https://bit.ly/springone-vid).
+For more, check out our intial [Getting Started Guide](spring-content-fs-docs.md), or watch one of our SpringOne talks [2016](https://bit.ly/springone-vid), [2017 @11mins](https://www.youtube.com/watch?v=YtNvHTwHhRY) and [2018](https://www.youtube.com/watch?v=qyIMHWR40eA&t=52s).
 
 ## Reference Documentation
 
@@ -133,7 +132,9 @@ To see more following out first [Getting Started Guide](spring-content-fs-docs.m
 | Spring Content S3 | [Current](refs/snapshot/s3-index.html)  | [Lastest Release](refs/release/s3-index.html)  |
 | Spring Content Filesystem | [Current](refs/snapshot/fs-index.html)  |  [Lastest Release](refs/release/fs-index.html) |
 | Spring Content Mongo  | [Current](refs/snapshot/mongo-index.html)  | [Lastest Release](refs/release/mongo-index.html)  |  
-| Spring  REST  | [Current](refs/snapshot/rest-index.html)  | [Lastest Release](refs/release/rest-index.html) |  
 | Spring Content JPA  | [Current](refs/snapshot/jpa-index.html)  | [Lastest Release](refs/release/jpa-index.html)  |  
 | Spring Versions JPA  | [Current](refs/snapshot/jpaversions-index.html)  | [Lastest Release](refs/release/jpaversions-index.html)  |  
 | Spring Content REST  | [Current](refs/snapshot/rest-index.html)  | [Lastest Release](refs/release/rest-index.html) |  
+| Spring Content CMIS  | [Current](refs/snapshot/cmis-index.html)  | [Lastest Release](refs/release/cmis-index.html) |  
+
+
