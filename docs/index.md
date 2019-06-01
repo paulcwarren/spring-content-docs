@@ -43,6 +43,8 @@ Build your own cloud-native, scale-out headless content services using the exact
 
 - Spring Content Solr - Content indexing and search with Apache Solr
 
+- Spring Content Elasticsearch  - Content indexing and search with Elasticsearch
+
 - Spring Versions Commons - Locking and versioning semantics for Entities and associated content
 
 - Spring Versions JPA - JPA-based implementation of locking and versioning
@@ -50,10 +52,6 @@ Build your own cloud-native, scale-out headless content services using the exact
 - Spring Data REST - Exports Spring Content stores as hypermedia-driven RESTful resources
 
 - Spring Content CMIS - Exports Spring Content stores through the CMIS browser bindings
-
-### Coming Soon
-
-- Spring Content ElasticSearch - Content indexing and search with Amazon Elastic Search
 
 ## Overview
 
@@ -134,7 +132,7 @@ For more, check out our intial [Getting Started Guide](spring-content-fs-docs.md
 | Spring Content Mongo  | [Current](refs/snapshot/mongo-index.html)  | [Lastest Release](refs/release/mongo-index.html)  |  
 | Spring Content JPA  | [Current](refs/snapshot/jpa-index.html)  | [Lastest Release](refs/release/jpa-index.html)  |  
 | Spring Versions JPA  | [Current](refs/snapshot/jpaversions-index.html)  | [Lastest Release](refs/release/jpaversions-index.html)  |  
+| Spring Content Solr  | [Current](refs/snapshot/solr-index.html)  | [Lastest Release](refs/release/solr-index.html)  |  
+| Spring Content Elasticsearch  | [Current](refs/snapshot/elasticsearch-index.html)  | [Lastest Release](refs/release/elasticsearch-index.html)  |  
 | Spring Content REST  | [Current](refs/snapshot/rest-index.html)  | [Lastest Release](refs/release/rest-index.html) |  
 | Spring Content CMIS  | [Current](refs/snapshot/cmis-index.html)  | [Lastest Release](refs/release/cmis-index.html) |  
-
-
