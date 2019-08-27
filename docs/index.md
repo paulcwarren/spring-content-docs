@@ -23,7 +23,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 
 - [SpringOne 2016 - Persistence Arrives on Cloud Foundry](https://www.youtube.com/watch?v=VisP5ebZoWw)
 
-- [SpringOne 2017 - A Guided Tour From Code Base To Platform 11:28 - 21:58](https://www.youtube.com/watch?v=YtNvHTwHhRY&t=0s&list=PLAdzTan_eSPQ2uPeB0bByiIUMLVAhrPHL&index=93) 
+- [SpringOne 2017 - A Guided Tour From Code Base To Platform 11:28 - 21:58](https://www.youtube.com/watch?v=YtNvHTwHhRY&t=0s&list=PLAdzTan_eSPQ2uPeB0bByiIUMLVAhrPHL&index=93)
 
 - [SpringOne 2018 - From Content Management to Content Services with Spring Boot, Data and Content](https://www.youtube.com/watch?v=qyIMHWR40eA)
 
@@ -121,18 +121,93 @@ Launch your app and Spring Content (having been autoconfigured by Boot) will aut
 
 - `unsetContent(S property)`
 
-For more, check out our intial [Getting Started Guide](spring-content-fs-docs.md), or watch one of our SpringOne talks [2016](https://bit.ly/springone-vid), [2017 @11mins](https://www.youtube.com/watch?v=YtNvHTwHhRY) and [2018](https://www.youtube.com/watch?v=qyIMHWR40eA&t=52s).
+For more, check out our initial [Getting Started Guide](spring-content-fs-docs.md), or watch one of our SpringOne talks [2016](https://bit.ly/springone-vid), [2017 @11mins](https://www.youtube.com/watch?v=YtNvHTwHhRY) and [2018](https://www.youtube.com/watch?v=qyIMHWR40eA&t=52s).
 
 ## Reference Documentation
 
-| Module  |   |   |
-|---|---|---|
-| Spring Content S3 | [Current](refs/snapshot/s3-index.html)  | [Lastest Release](refs/release/s3-index.html)  |
-| Spring Content Filesystem | [Current](refs/snapshot/fs-index.html)  |  [Lastest Release](refs/release/fs-index.html) |
-| Spring Content Mongo  | [Current](refs/snapshot/mongo-index.html)  | [Lastest Release](refs/release/mongo-index.html)  |  
-| Spring Content JPA  | [Current](refs/snapshot/jpa-index.html)  | [Lastest Release](refs/release/jpa-index.html)  |  
-| Spring Versions JPA  | [Current](refs/snapshot/jpaversions-index.html)  | [Lastest Release](refs/release/jpaversions-index.html)  |  
-| Spring Content Solr  | [Current](refs/snapshot/solr-index.html)  | [Lastest Release](refs/release/solr-index.html)  |  
-| Spring Content Elasticsearch  | [Current](refs/snapshot/elasticsearch-index.html)  | [Lastest Release](refs/release/elasticsearch-index.html)  |  
-| Spring Content REST  | [Current](refs/snapshot/rest-index.html)  | [Lastest Release](refs/release/rest-index.html) |  
-| Spring Content CMIS  | [Current](refs/snapshot/cmis-index.html)  | [Lastest Release](refs/release/cmis-index.html) |  
+<table width=100%>
+    <thead>
+        <tr>
+            <th></th>
+            <th colspan=2 style="text-align:center">Spring Boot 2.1.x</th>
+            <th colspan=2 style="text-align:center">Spring Boot 2.2.x</th>
+        </tr>
+        <tr>
+            <th colspan=5>Storage</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Spring Content S3</td>
+            <td><a href="refs/snapshot/master/s3-index.html">0.11.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/s3-index.html">0.10.0</a></td>
+            <td><a href="refs/snapshot/1.0.x/s3-index.html">1.0.0.M2-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M1/s3-index.html">1.0.0.M1</a></td>
+        </tr>
+        <tr>
+            <td>Spring Content Filesystem</td>
+            <td><a href="refs/snapshot/master/fs-index.html">0.11.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/fs-index.html">0.10.0</a></td>
+            <td><a href="refs/snapshot/1.0.x/fs-index.html">1.0.0.M2-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M1/fs-index.html">1.0.0.M1</a></td>
+        </tr>
+        <tr>
+            <td>Spring Content Mongo</td>
+            <td><a href="refs/snapshot/master/mongo-index.html">0.11.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/mongo-index.html">0.10.0</a></td>
+            <td><a href="refs/snapshot/1.0.x/mongo-index.html">1.0.0.M2-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M1/mongo-index.html">1.0.0.M1</a></td>
+        </tr>
+        <tr>
+            <td>Spring Content JPA</td>
+            <td><a href="refs/snapshot/master/jpa-index.html">0.11.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/jpa-index.html">0.10.0</a></td>
+            <td><a href="refs/snapshot/1.0.x/jpa-index.html">1.0.0.M2-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M1/jpa-index.html">1.0.0.M1</a></td>
+        </tr>
+        <tr>
+            <th colspan=5>Versioning</th>
+        </tr>
+        <tr>
+            <td>Spring Versions JPA</td>
+            <td><a href="refs/snapshot/master/jpaversions-index.html">0.11.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/jpaversion-index.html">0.10.0</a></td>
+            <td><a href="refs/snapshot/1.0.x/jpaversions-index.html">1.0.0.M2-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M1/jpaversions-index.html">1.0.0.M1</a></td>
+        </tr>
+        <tr>
+            <th colspan=5>Fulltext Indexing</th>
+        </tr>
+        <tr>
+            <td>Spring Content Solr</td>
+            <td><a href="refs/snapshot/master/solr-index.html">0.11.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/solr-index.html">0.10.0</a></td>
+            <td><a href="refs/snapshot/1.0.x/solr-index.html">1.0.0.M2-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M1/solr-index.html">1.0.0.M1</a></td>
+        </tr>
+        <tr>
+            <td>Spring Content Elasticsearch</td>
+            <td><a href="refs/snapshot/master/elasticsearch-index.html">0.11.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/elasticsearch-index.html">0.10.0</a></td>
+            <td><a href="refs/snapshot/1.0.x/elasticsearch-index.html">1.0.0.M2-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M1/elasticsearch-index.html">1.0.0.M1</a></td>
+        </tr>
+        <tr>
+            <th colspan=5>APIs</th>
+        </tr>
+        <tr>
+            <td>Spring Content REST</td>
+            <td><a href="refs/snapshot/master/rest-index.html">0.11.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/rest-index.html">0.10.0</a></td>
+            <td><a href="refs/snapshot/1.0.x/rest-index.html">1.0.0.M2-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M1/rest-index.html">1.0.0.M1</a></td>
+        </tr>
+        <tr>
+            <td>Spring Content CMIS</td>
+            <td><a href="refs/snapshot/master/cmis-index.html">0.11.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/cmis-index.html">0.10.0</a></td>
+            <td><a href="refs/snapshot/1.0.x/cmis-index.html">1.0.0.M2-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M1/cmis-index.html">1.0.0.M1</a></td>
+        </tr>
+    </tbody>
+</table>
