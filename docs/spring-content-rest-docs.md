@@ -75,12 +75,12 @@ Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
 		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-fs-boot-starter</artifactId>
-			<version>0.11.0</version>
+			<version>0.12.0</version>
 		</dependency>
  		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-rest-boot-starter</artifactId>
-			<version>0.11.0</version>
+			<version>0.12.0</version>
 		</dependency>
  	</dependencies>
 

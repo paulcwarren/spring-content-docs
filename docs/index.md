@@ -64,7 +64,7 @@ Build your own cloud-native, scale-out headless content services using the exact
 <dependency>
     <groupId>com.github.paulcwarren</groupId>
     <artifactId>spring-content-fs-boot-starter</artifactId>
-    <version>0.11.0</version>
+    <version>0.12.0</version>
 </dependency>
 ```
 
@@ -139,29 +139,29 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
     <tbody>
         <tr>
             <td>Spring Content S3</td>
-            <td><a href="refs/snapshot/master/s3-index.html">0.12.0-SNAPSHOT</a></td>
-            <td><a href="refs/release/0.11.0/s3-index.html">0.11.0</a></td>
+            <td><a href="refs/snapshot/master/s3-index.html">0.13.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/0.12.0/s3-index.html">0.12.0</a></td>
             <td><a href="refs/snapshot/1.0.x/s3-index.html">1.0.0.M3-SNAPSHOT</a></td>
             <td><a href="refs/release/1.0.0.M2/s3-index.html">1.0.0.M2</a></td>
         </tr>
         <tr>
             <td>Spring Content Filesystem</td>
-            <td><a href="refs/snapshot/master/fs-index.html">0.12.0-SNAPSHOT</a></td>
-            <td><a href="refs/release/0.11.0/fs-index.html">0.11.0</a></td>
+            <td><a href="refs/snapshot/master/fs-index.html">0.13.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/0.12.0/fs-index.html">0.12.0</a></td>
             <td><a href="refs/snapshot/1.0.x/fs-index.html">1.0.0.M3-SNAPSHOT</a></td>
             <td><a href="refs/release/1.0.0.M2/fs-index.html">1.0.0.M2</a></td>
         </tr>
         <tr>
             <td>Spring Content Mongo</td>
-            <td><a href="refs/snapshot/master/mongo-index.html">0.12.0-SNAPSHOT</a></td>
-            <td><a href="refs/release/0.11.0/mongo-index.html">0.11.0</a></td>
+            <td><a href="refs/snapshot/master/mongo-index.html">0.13.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/0.12.0/mongo-index.html">0.12.0</a></td>
             <td><a href="refs/snapshot/1.0.x/mongo-index.html">1.0.0.M3-SNAPSHOT</a></td>
             <td><a href="refs/release/1.0.0.M2/mongo-index.html">1.0.0.M2</a></td>
         </tr>
         <tr>
             <td>Spring Content JPA</td>
-            <td><a href="refs/snapshot/master/jpa-index.html">0.12.0-SNAPSHOT</a></td>
-            <td><a href="refs/release/0.11.0/jpa-index.html">0.11.0</a></td>
+            <td><a href="refs/snapshot/master/jpa-index.html">0.13.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/0.12.0/jpa-index.html">0.12.0</a></td>
             <td><a href="refs/snapshot/1.0.x/jpa-index.html">1.0.0.M3-SNAPSHOT</a></td>
             <td><a href="refs/release/1.0.0.M2/jpa-index.html">1.0.0.M2</a></td>
         </tr>
@@ -170,8 +170,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
         </tr>
         <tr>
             <td>Spring Versions JPA</td>
-            <td><a href="refs/snapshot/master/jpaversions-index.html">0.12.0-SNAPSHOT</a></td>
-            <td><a href="refs/release/0.11.0/jpaversion-index.html">0.11.0</a></td>
+            <td><a href="refs/snapshot/master/jpaversions-index.html">0.13.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/0.12.0/jpaversion-index.html">0.12.0</a></td>
             <td><a href="refs/snapshot/1.0.x/jpaversions-index.html">1.0.0.M3-SNAPSHOT</a></td>
             <td><a href="refs/release/1.0.0.M2/jpaversions-index.html">1.0.0.M2</a></td>
         </tr>
@@ -180,15 +180,15 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
         </tr>
         <tr>
             <td>Spring Content Solr</td>
-            <td><a href="refs/snapshot/master/solr-index.html">0.12.0-SNAPSHOT</a></td>
-            <td><a href="refs/release/0.11.0/solr-index.html">0.11.0</a></td>
+            <td><a href="refs/snapshot/master/solr-index.html">0.13.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/0.12.0/solr-index.html">0.12.0</a></td>
             <td><a href="refs/snapshot/1.0.x/solr-index.html">1.0.0.M3-SNAPSHOT</a></td>
             <td><a href="refs/release/1.0.0.M2/solr-index.html">1.0.0.M2</a></td>
         </tr>
         <tr>
             <td>Spring Content Elasticsearch</td>
-            <td><a href="refs/snapshot/master/elasticsearch-index.html">0.12.0-SNAPSHOT</a></td>
-            <td><a href="refs/release/0.11.0/elasticsearch-index.html">0.11.0</a></td>
+            <td><a href="refs/snapshot/master/elasticsearch-index.html">0.13.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/0.12.0/elasticsearch-index.html">0.12.0</a></td>
             <td><a href="refs/snapshot/1.0.x/elasticsearch-index.html">1.0.0.M3-SNAPSHOT</a></td>
             <td><a href="refs/release/1.0.0.M2/elasticsearch-index.html">1.0.0.M2</a></td>
         </tr>
@@ -197,15 +197,15 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
         </tr>
         <tr>
             <td>Spring Content REST</td>
-            <td><a href="refs/snapshot/master/rest-index.html">0.12.0-SNAPSHOT</a></td>
-            <td><a href="refs/release/0.11.0/rest-index.html">0.11.0</a></td>
+            <td><a href="refs/snapshot/master/rest-index.html">0.13.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/0.12.0/rest-index.html">0.12.0</a></td>
             <td><a href="refs/snapshot/1.0.x/rest-index.html">1.0.0.M3-SNAPSHOT</a></td>
             <td><a href="refs/release/1.0.0.M2/rest-index.html">1.0.0.M2</a></td>
         </tr>
         <tr>
             <td>Spring Content CMIS</td>
-            <td><a href="refs/snapshot/master/cmis-index.html">0.12.0-SNAPSHOT</a></td>
-            <td><a href="refs/release/0.11.0/cmis-index.html">0.11.0</a></td>
+            <td><a href="refs/snapshot/master/cmis-index.html">0.13.0-SNAPSHOT</a></td>
+            <td><a href="refs/release/0.12.0/cmis-index.html">0.12.0</a></td>
             <td><a href="refs/snapshot/1.0.x/cmis-index.html">1.0.0.M3-SNAPSHOT</a></td>
             <td><a href="refs/release/1.0.0.M2/cmis-index.html">1.0.0.M2</a></td>
         </tr>
