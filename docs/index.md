@@ -141,29 +141,29 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>Spring Content S3</td>
             <td><a href="refs/snapshot/master/s3-index.html">0.13.0-SNAPSHOT</a></td>
             <td><a href="refs/release/0.12.0/s3-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/s3-index.html">1.0.0.M4-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.0.0.M3/s3-index.html">1.0.0.M3</a></td>
+            <td><a href="refs/snapshot/1.0.x/s3-index.html">1.0.0.M5-SNAPSHOT-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M4/s3-index.html">1.0.0.M4</a></td>
         </tr>
         <tr>
             <td>Spring Content Filesystem</td>
             <td><a href="refs/snapshot/master/fs-index.html">0.13.0-SNAPSHOT</a></td>
             <td><a href="refs/release/0.12.0/fs-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/fs-index.html">1.0.0.M4-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.0.0.M3/fs-index.html">1.0.0.M3</a></td>
+            <td><a href="refs/snapshot/1.0.x/fs-index.html">1.0.0.M5-SNAPSHOT-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M4/fs-index.html">1.0.0.M4</a></td>
         </tr>
         <tr>
             <td>Spring Content Mongo</td>
             <td><a href="refs/snapshot/master/mongo-index.html">0.13.0-SNAPSHOT</a></td>
             <td><a href="refs/release/0.12.0/mongo-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/mongo-index.html">1.0.0.M4-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.0.0.M3/mongo-index.html">1.0.0.M3</a></td>
+            <td><a href="refs/snapshot/1.0.x/mongo-index.html">1.0.0.M5-SNAPSHOT-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M4/mongo-index.html">1.0.0.M4</a></td>
         </tr>
         <tr>
             <td>Spring Content JPA</td>
             <td><a href="refs/snapshot/master/jpa-index.html">0.13.0-SNAPSHOT</a></td>
             <td><a href="refs/release/0.12.0/jpa-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/jpa-index.html">1.0.0.M4-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.0.0.M3/jpa-index.html">1.0.0.M3</a></td>
+            <td><a href="refs/snapshot/1.0.x/jpa-index.html">1.0.0.M5-SNAPSHOT-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M4/jpa-index.html">1.0.0.M4</a></td>
         </tr>
         <tr>
             <th colspan=5>Versioning</th>
@@ -172,8 +172,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>Spring Versions JPA</td>
             <td><a href="refs/snapshot/master/jpaversions-index.html">0.13.0-SNAPSHOT</a></td>
             <td><a href="refs/release/0.12.0/jpaversion-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/jpaversions-index.html">1.0.0.M4-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.0.0.M3/jpaversions-index.html">1.0.0.M3</a></td>
+            <td><a href="refs/snapshot/1.0.x/jpaversions-index.html">1.0.0.M5-SNAPSHOT-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M4/jpaversions-index.html">1.0.0.M4</a></td>
         </tr>
         <tr>
             <th colspan=5>Fulltext Indexing</th>
@@ -182,15 +182,15 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>Spring Content Solr</td>
             <td><a href="refs/snapshot/master/solr-index.html">0.13.0-SNAPSHOT</a></td>
             <td><a href="refs/release/0.12.0/solr-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/solr-index.html">1.0.0.M4-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.0.0.M3/solr-index.html">1.0.0.M3</a></td>
+            <td><a href="refs/snapshot/1.0.x/solr-index.html">1.0.0.M5-SNAPSHOT-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M4/solr-index.html">1.0.0.M4</a></td>
         </tr>
         <tr>
             <td>Spring Content Elasticsearch</td>
             <td><a href="refs/snapshot/master/elasticsearch-index.html">0.13.0-SNAPSHOT</a></td>
             <td><a href="refs/release/0.12.0/elasticsearch-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/elasticsearch-index.html">1.0.0.M4-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.0.0.M3/elasticsearch-index.html">1.0.0.M3</a></td>
+            <td><a href="refs/snapshot/1.0.x/elasticsearch-index.html">1.0.0.M5-SNAPSHOT-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M4/elasticsearch-index.html">1.0.0.M4</a></td>
         </tr>
         <tr>
             <th colspan=5>APIs</th>
@@ -199,15 +199,15 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>Spring Content REST</td>
             <td><a href="refs/snapshot/master/rest-index.html">0.13.0-SNAPSHOT</a></td>
             <td><a href="refs/release/0.12.0/rest-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/rest-index.html">1.0.0.M4-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.0.0.M3/rest-index.html">1.0.0.M3</a></td>
+            <td><a href="refs/snapshot/1.0.x/rest-index.html">1.0.0.M5-SNAPSHOT-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M4/rest-index.html">1.0.0.M4</a></td>
         </tr>
         <tr>
             <td>Spring Content CMIS</td>
             <td><a href="refs/snapshot/master/cmis-index.html">0.13.0-SNAPSHOT</a></td>
             <td><a href="refs/release/0.12.0/cmis-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/cmis-index.html">1.0.0.M4-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.0.0.M3/cmis-index.html">1.0.0.M3</a></td>
+            <td><a href="refs/snapshot/1.0.x/cmis-index.html">1.0.0.M5-SNAPSHOT-SNAPSHOT</a></td>
+            <td><a href="refs/release/1.0.0.M4/cmis-index.html">1.0.0.M4</a></td>
         </tr>
     </tbody>
 </table>
