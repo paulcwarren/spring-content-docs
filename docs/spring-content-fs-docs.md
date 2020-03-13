@@ -92,7 +92,7 @@ In a project directory of your choosing, create the following subdirectory struc
 		<dependency>
 			<groupId>com.github.paulcwarren</groupId>
 			<artifactId>spring-content-fs-boot-starter</artifactId>
-			<version>1.0.0.M6</version>
+			<version>1.0.0.M7</version>
 		</dependency>
 	</dependencies>
 
