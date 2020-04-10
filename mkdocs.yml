@@ -1,6 +1,10 @@
 site_name: Spring Content
-theme: mkdocs
-pages:
-- Home: index.md
-- Basics: spring-content-fs-docs.md
-- REST: spring-content-rest-docs.md
+theme: bootstrap4
+nav:
+  - Home: index.md
+  - Guides:
+    - Basics: spring-content-fs-docs.md
+    - REST: spring-content-rest-docs.md
+plugins:
+  - search
+  - git-committers

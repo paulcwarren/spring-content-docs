@@ -11,6 +11,8 @@ pwd=$PWD
 
 mkdocs build --clean
 
+$PWD/scripts/snippet.sh $PWD/site
+
 tmpdir=`mktemp -d 2>/dev/null || mktemp -d -t 'sctmpdir'`
 mkdir -p $tmpdir
 

@@ -1,4 +1,4 @@
-#### Getting Started with Spring Content REST
+# Getting Started with Spring Content REST
 
 ## What you'll build
 
@@ -37,63 +37,7 @@ Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
 `pom.xml`
 
 ```
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-
-  <groupId>com.emc.spring.content</groupId>
-  <artifactId>spring-content-rest-gettingstarted</artifactId>
-  <version>0.0.1</version>
-
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.4.RELEASE</version>
-	</parent>
-
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.8</java.version>
-	</properties>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.github.paulcwarren</groupId>
-			<artifactId>spring-content-fs-boot-starter</artifactId>
-			<version>1.0.0.M8</version>
-		</dependency>
- 		<dependency>
-			<groupId>com.github.paulcwarren</groupId>
-			<artifactId>spring-content-rest-boot-starter</artifactId>
-			<version>1.0.0.M8</version>
-		</dependency>
- 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
-</project>
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-rest/complete/pom.xml 1-}
 ```
 
 ## Update File Entity
@@ -103,35 +47,7 @@ Add the `@MimeType` marker annotation to our Entity.
 `src/main/java/gettingstarted/File.java`
 
 ```
-package gettingstarted;
-
-import java.util.Date;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-import org.springframework.content.commons.annotations.ContentId;
-import org.springframework.content.commons.annotations.ContentLength;
-import org.springframework.content.commons.annotations.MimeType;
-
-@Entity
-public class File {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
-	private String name;
-	private Date created = new Date();
-	private String summary;
-
-	@ContentId private String contentId;
-	@ContentLength private long contentLength;
-	@MimeType private String mimeType = "text/plain";
-
-    ...Getters and setters...
-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-rest/complete/src/main/java/gettingstarted/File.java 1-}
 ```
 
 The `mimeType` attribute is updated with the Spring Content  `@MimeType`
@@ -146,14 +62,7 @@ API, update our `FileContentStore` by annotating it with the
 `src/main/java/gettingstarted/FileContentStore.java`
 
 ```
-package gettingstarted;
-
-import org.springframework.content.commons.repository.ContentStore;
-import org.springframework.content.rest.StoreRestResource;
-
-@StoreRestResource
-public interface FileContentStore extends ContentStore<File, String> {
-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-rest/complete/src/main/java/gettingstarted/FileContentStore.java 1-}
 ```
 
 ## Remove FileContentController
@@ -189,9 +98,9 @@ Content and Spring Content REST to save objects with content to the
 file-system and to fetch them again using a hypermedia-based REST API -
 all without writing any implementation code to handle file access.
 
-Don't forget you can just changing the type of the spring-content boot-starter
-project on the classpath you can switch from file-based to a different
-implementation.  Spring Content REST works seamlessly with all modules.
+Don't forget you can simply change the type of the spring-content bootstarter
+project on the classpath to switch from file storage to a different
+storage medium.  Spring Content REST works seamlessly with all of the storage modules.
 
 Spring Content supports the following implementations:-
 
