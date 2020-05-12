@@ -32,7 +32,7 @@ When you’re finished, you can check your results against the code in
 
 ### Update dependencies
 
-Add the `com.emc.spring.content:spring-content-rest-boot-starter` dependency.
+Add the `com.github.paulcwarren:spring-content-rest-boot-starter` dependency.
 
 `pom.xml`
 

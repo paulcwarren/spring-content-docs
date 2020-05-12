@@ -3,8 +3,9 @@ theme: bootstrap4
 nav:
   - Home: index.md
   - Guides:
-    - Basics: spring-content-fs-docs.md
-    - REST: spring-content-rest-docs.md
+    - Java API: spring-content-fs-docs.md
+    - REST API: spring-content-rest-docs.md
+    - Versions: spring-content-with-versions-docs.md
 plugins:
   - search
   - git-committers
