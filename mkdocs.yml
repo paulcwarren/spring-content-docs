@@ -8,4 +8,6 @@ nav:
     - Versions: spring-content-with-versions-docs.md
 plugins:
   - search
-  - git-committers
+  - git-committers:
+      repository: paulcwarren/spring-content
+      branch: master
