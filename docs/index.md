@@ -158,6 +158,17 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/release/1.1.0.M1/jpa-index.html">1.1.0.M1</a></td>
         </tr>
         <tr>
+            <th colspan=7>Renditions</th>
+        </tr>
+        <tr>
+            <td>Spring Content Renditions</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td><a href="refs/snapshot/1.1.x/renditions-index.html">1.1.0.M2-SNAPSHOT</a></td>
+            <td>-</td>
+        </tr>
+        <tr>
             <th colspan=7>Versioning</th>
         </tr>
         <tr>
