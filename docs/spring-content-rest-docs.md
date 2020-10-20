@@ -79,6 +79,8 @@ by typing:
 
 `java -jar target/gettingstarted-spring-content-rest-0.0.1.jar`
 
+## Test the application
+
 And then point your browser at:-
 
 `http://localhost:8080`
@@ -90,6 +92,63 @@ and you should see something like this:-
 As you did in the previous tutorial, exercise the application by uploading
 a range of new files and viewing them.  You should see viewed files open
 as they did before.
+
+## Test the REST API
+
+Alternatively, you can test the REST API directly.
+
+First create an entity:
+
+`curl -X POST -H 'Content-Type:application/hal+json' -d '{}' http://localhost:8080/files/`
+
+You should recieve a response back from your service that looks something like the following:
+
+```
+{
+  "name" : null,
+  "created" : "2020-10-20T04:17:03.733+0000",
+  "summary" : null,
+  "contentId" : null,
+  "contentLength" : 0,
+  "mimeType" : "text/plain",
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/files/1"
+    },
+    "file" : {
+      "href" : "http://localhost:8080/files/1"
+    },
+    "content" : {
+      "href" : "http://localhost:8080/files/1"
+    }
+  }
+}
+``` 
+
+Follow the `content` link relation to add content either using CURL:
+
+`curl -X PUT -H 'Content-Type:text/plain' -d 'Hello Spring Content World!' http://localhost:8080/files/1` 
+
+Or, if you prefer, by uploading the content via postman:
+
+<center>![Content Upload via Postman](spring-content-rest-postman.png)</center>
+
+---
+**NOTE**
+
+Unlike the curl-based PUT example above this Postman request is specifying a `multipart/form-data` request and a form entry with a key of `file` and with the content of the file as the value.
+
+Spring Content REST supports PUT and POST requests with the Content-Type header set to the actual mimetype of the content, such as `text/plain` or with a content-type of `multipart/form-data` and a properly constructed multipart form. 
+
+---
+
+Lasty, verify the content was uploaded by requesting it again:
+
+`curl -H 'Accept:text/plain' http://localhost:8080/files/1`
+
+You should see you content returned as follows:
+
+`Hello Spring Content World!`
 
 ## Summary
 
