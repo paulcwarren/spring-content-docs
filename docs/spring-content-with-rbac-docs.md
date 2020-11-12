@@ -41,7 +41,7 @@ Add `org.springframework.boot:spring-boot-starter-security` dependencies.
 Enable web security.
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-with-versions/complete/src/main/java/gettingstarted/SpringSecruityConfig.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-with-rbac/complete/src/main/java/gettingstarted/SpringSecurityConfig.java 1-}
 ```
 
 First, define two users and two roles.  Eric is a content `reader` and Paul is a content `reader` and `author`.
@@ -53,7 +53,7 @@ Second, secure the Spring Content endpoint `/files/**/content` that `GETs` and `
 As an alternative secure removing content to the `author` role by using an alternative approach using the `@PreAuthorize` annotation on the FileContentStore's `unset` method.
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-with-versions/complete/src/main/java/gettingstarted/FileContentStore.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-with-rbac/complete/src/main/java/gettingstarted/FileContentStore.java 1-}
 ```
 
 ## Build an executable JAR
