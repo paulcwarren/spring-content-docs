@@ -8,6 +8,7 @@ nav:
     - Renditions: spring-content-with-renditions-docs.md
     - Fulltext: spring-content-with-fulltext-docs.md
     - Versions: spring-content-with-versions-docs.md
+    - RBAC: spring-content-with-rbac-docs.md
 plugins:
   - search
   - git-committers:
