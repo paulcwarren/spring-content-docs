@@ -1,20 +1,18 @@
-#### Spring Content
+#### Content Services for Spring
 
-Cloud-Native Content Services for Spring.
+Cloud-Native Content Management Services for Spring.
 
-For creating services that manage content such as documents, images and movies.  
-
-Build your own cloud-native, scale-out headless content services using the exact same components as the Enterprise Content Management (ECM) vendors such as Documentum and OpenText, without the hassle.   
+For creating cloud-native, horizontally scaling Content Management Services that manage your unstructured data and rich content such as documents, images and movies.  
 
 ## Features
 
-- Standardized content access no matter where it is stored  
+- Standardized access to content no matter where it is stored  
 
-- Content/metadata association   
+- Content with metadata association   
 
-- Content search
+- Full-text search
 
-- Content transformation
+- Content rendition and transformation
 
 - REST or CMIS endpoints
 
@@ -30,29 +28,18 @@ Build your own cloud-native, scale-out headless content services using the exact
 
 ## Modules
 
-- Spring Content Commons - Core Spring concepts underpinning every Spring Content project.
-
-- Spring Content S3 - Store support for Amazon S3 objects.  Also supports DellEMC ECS
-
-- Spring Content Filesystem - Store support for the Filesystem files
-
-- Spring Content Mongo - Store support for Mongo's GridFS
-
-- Spring Content JPA - Store support for JPA BLOBs
-
-- Spring Content Renditions - Extensible rendition service for content transformations
-
-- Spring Content Solr - Content indexing and search with Apache Solr
-
-- Spring Content Elasticsearch  - Content indexing and search with Elasticsearch
-
-- Spring Versions Commons - Locking and versioning semantics for Entities and associated content
-
-- Spring Versions JPA - JPA-based implementation of locking and versioning
-
-- Spring Data REST - Exports Spring Content stores as hypermedia-driven RESTful resources
-
-- Spring Content CMIS - Exports Spring Content stores through the CMIS browser bindings
+- Commons - Core content management concepts underpinning every other module
+- S3 - Store support for Amazon S3, and any other S3-compliant object storage  
+- Filesystem - Store support for the Filesystem storage
+- Mongo - Store support for Mongo's GridFS storage
+- JPA - Store support for JPA BLOB storage
+- Renditions - Extensible rendition service for content transformations
+- Solr - Content indexing and search with Apache Solr
+- Elasticsearch  - Content indexing and search with Elasticsearch
+- Versions Commons - Locking and versioning semantics for Entities and associated content
+- Versions JPA - JPA-based implementation of locking and versioning
+- REST - Exports Stores as hypermedia-driven RESTful resources
+- CMIS - Exports Stores through the CMIS browser bindings
 
 ## Overview
 
@@ -104,118 +91,141 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
 
 ## Reference Documentation
 
-<table width=100%>
+<table width=100% border=1px>
     <thead>
         <tr>
             <th></th>
-            <th style="text-align:center">Spring Boot 2.1.x</th>
-            <th colspan=2 style="text-align:center">Spring Boot 2.2.x</th>
-            <th colspan=2 style="text-align:center">Spring Boot 2.3.x</th>
+            <th style="text-align:center">Boot 2.1.x</th>
+            <th colspan=2 style="text-align:center">Boot 2.2.x</th>
+            <th colspan=2 style="text-align:center">Boot 2.3.x</th>
+            <th colspan=2 style="text-align:center">Boot 2.4.x</th>
         </tr>
         <tr>
-            <th>
+            <th></th>
+            <th>GA</th>
             <th>GA</th>
             <th>SNAPSHOT</th>
             <th>GA</th>
-            <th>SNAPSHOT
+            <th>SNAPSHOT</th>
             <th>GA</th>
+            <th>SNAPSHOT</th>
         </tr>
         <tr>
-            <th colspan=6>Storage</th>
+            <th colspan=9>Storage</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Spring Content S3</td>
             <td><a href="refs/release/0.12.0/s3-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/s3-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.0.0.M11/s3-index.html">1.0.0.M10</a></td>
-            <td><a href="refs/snapshot/1.1.x/s3-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/s3-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/snapshot/1.0.x/s3-index.html">1.0.0.M11</a></td>
+            <td><a href="refs/release/1.1.0.M5/s3-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/s3-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/s3-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/s3-index.html">1.2.1</a></td>
         </tr>
         <tr>
             <td>Spring Content Filesystem</td>
             <td><a href="refs/release/0.12.0/fs-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/fs-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.0.0.M10/fs-index.html">1.0.0.M10</a></td>
-            <td><a href="refs/snapshot/1.1.x/fs-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/fs-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/snapshot/1.0.x/fs-index.html">1.0.0.M11</a></td>
+            <td><a href="refs/release/1.1.0.M5/fs-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/fs-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/fs-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/fs-index.html">1.2.1</a></td>
         </tr>
         <tr>
             <td>Spring Content Mongo</td>
             <td><a href="refs/release/0.12.0/mongo-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/mongo-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.0.0.M10/mongo-index.html">1.0.0.M10</a></td>
-            <td><a href="refs/snapshot/1.1.x/mongo-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/mongo-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/snapshot/1.0.x/mongo-index.html">1.0.0.M11</a></td>
+            <td><a href="refs/release/1.1.0.M5/mongo-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/mongo-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/mongo-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/mongo-index.html">1.2.1</a></td>
         </tr>
         <tr>
             <td>Spring Content JPA</td>
             <td><a href="refs/release/0.12.0/jpa-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/jpa-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.0.0.M10/jpa-index.html">1.0.0.M10</a></td>
-            <td><a href="refs/snapshot/1.1.x/jpa-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/jpa-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/snapshot/1.0.x/jpa-index.html">1.0.0.M11</a></td>
+            <td><a href="refs/release/1.1.0.M5/jpa-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/jpa-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/jpa-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/jpa-index.html">1.2.1</a></td>
         </tr>
         <tr>
-            <th colspan=7>Renditions</th>
+            <th colspan=9>Renditions</th>
         </tr>
         <tr>
             <td>Spring Content Renditions</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td><a href="refs/snapshot/1.1.x/renditions-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/renditions-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/release/1.1.0.M5/renditions-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/renditions-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/renditions-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/renditions-index.html">1.2.1</a></td>
         </tr>
         <tr>
-            <th colspan=7>Versioning</th>
+            <th colspan=9>Versioning</th>
         </tr>
         <tr>
             <td>Spring Versions JPA</td>
             <td><a href="refs/release/0.12.0/jpaversion-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/jpaversions-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.0.0.M10/jpaversions-index.html">1.0.0.M10</a></td>
-            <td><a href="refs/snapshot/1.1.x/jpaversions-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/jpaversions-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/snapshot/1.0.x/jpaversions-index.html">1.0.0.M11</a></td>
+            <td><a href="refs/release/1.1.0.M5/jpaversions-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/jpaversions-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/jpaversions-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/jpaversions-index.html">1.2.1</a></td>
         </tr>
         <tr>
-            <th colspan=7>Fulltext Indexing</th>
+            <th colspan=9>Fulltext Indexing</th>
         </tr>
         <tr>
             <td>Spring Content Solr</td>
             <td><a href="refs/release/0.12.0/solr-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/solr-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.0.0.M10/solr-index.html">1.0.0.M10</a></td>
-            <td><a href="refs/snapshot/1.1.x/solr-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/solr-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/snapshot/1.0.x/solr-index.html">1.0.0.M11</a></td>
+            <td><a href="refs/release/1.1.0.M5/solr-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/solr-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/solr-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/solr-index.html">1.2.1</a></td>
         </tr>
         <tr>
             <td>Spring Content Elasticsearch</td>
             <td><a href="refs/release/0.12.0/elasticsearch-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/elasticsearch-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.0.0.M10/elasticsearch-index.html">1.0.0.M10</a></td>
-            <td><a href="refs/snapshot/1.1.x/elasticsearch-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/elasticsearch-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/snapshot/1.0.x/elasticsearch-index.html">1.0.0.M11</a></td>
+            <td><a href="refs/release/1.1.0.M5/elasticsearch-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/elasticsearch-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/elasticsearch-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/elasticsearch-index.html">1.2.1</a></td>
         </tr>
         <tr>
-            <th colspan=7>APIs</th>
+            <th colspan=9>APIs</th>
         </tr>
         <tr>
             <td>Spring Content REST</td>
             <td><a href="refs/release/0.12.0/rest-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/rest-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.0.0.M10/rest-index.html">1.0.0.M10</a></td>
-            <td><a href="refs/snapshot/1.1.x/rest-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/rest-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/snapshot/1.0.x/rest-index.html">1.0.0.M11</a></td>
+            <td><a href="refs/release/1.1.0.M5/rest-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/rest-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/rest-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/rest-index.html">1.2.1</a></td>
         </tr>
         <tr>
             <td>Spring Content CMIS</td>
             <td><a href="refs/release/0.12.0/cmis-index.html">0.12.0</a></td>
-            <td><a href="refs/snapshot/1.0.x/cmis-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.0.0.M10/cmis-index.html">1.0.0.M10</a></td>
-            <td><a href="refs/snapshot/1.1.x/cmis-index.html">1.1.0.M5-SNAPSHOT</a></td>
-            <td><a href="refs/release/1.1.0.M4/cmis-index.html">1.1.0.M4</a></td>
+            <td><a href="refs/snapshot/1.0.x/cmis-index.html">1.0.0.M11</a></td>
+            <td><a href="refs/release/1.1.0.M5/cmis-index.html">1.1.0.M5</a></td>
+            <td><a href="refs/snapshot/1.1.x/cmis-index.html">1.1.0.M6</a></td>
+            <td><a href="refs/release/1.1.0.M5/cmis-index.html">1.2.0</a></td>
+            <td><a href="refs/snapshot/1.2.x/cmis-index.html">1.2.1</a></td>
         </tr>
     </tbody>
 </table>

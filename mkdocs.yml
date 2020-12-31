@@ -1,4 +1,4 @@
-site_name: Spring Content
+site_name: Content Services for Spring
 theme: bootstrap4
 nav:
   - Home: index.md
