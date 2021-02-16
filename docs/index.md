@@ -126,6 +126,16 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.2.x/s3-index.html">1.2.2</a></td>
         </tr>
         <tr>
+            <td>Spring Content GCS</td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="refs/release/1.2.1/gcs-index.html">1.2.1</a></td>
+            <td><a href="refs/snapshot/1.2.x/gcs-index.html">1.2.2</a></td>
+        </tr>
+        <tr>
             <td>Spring Content Filesystem</td>
             <td><a href="refs/release/0.12.0/fs-index.html">0.12.0</a></td>
             <td><a href="refs/release/1.0.0.M10/fs-index.html">1.0.0.M10</a></td>
