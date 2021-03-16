@@ -8,11 +8,13 @@ For creating cloud-native, horizontally scaling Content Management Services that
 
 - Standardized access to content no matter where it is stored  
 
-- Content with metadata association   
+- Associate content with Spring Data entities
 
-- Full-text search
+- Full-text search (Solr and Elasticsearch)
 
 - Content rendition and transformation
+
+- Pessimistic Versioning and auto-versioning
 
 - REST or CMIS endpoints
 
@@ -84,11 +86,6 @@ Launch your app and Spring Content (having been autoconfigured by Spring Boot) w
 
 For more, check out our initial [Getting Started Guide](spring-content-fs-docs.md), or watch one of our SpringOne talks [2016](https://bit.ly/springone-vid), [2017 @11mins](https://www.youtube.com/watch?v=YtNvHTwHhRY) and [2018](https://www.youtube.com/watch?v=qyIMHWR40eA&t=52s).
 
-## Releases
-
-
-
-
 ## Reference Documentation
 
 <table width=100% border=1px>
@@ -136,6 +133,16 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.2.x/gcs-index.html">1.2.2</a></td>
         </tr>
         <tr>
+            <td>Spring Content Azure Storage</td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="#">n/a</a></td>
+            <td><a href="refs/snapshot/1.2.x/azure-index.html">1.2.2</a></td>
+        </tr>
+        <tr>
             <td>Spring Content Filesystem</td>
             <td><a href="refs/release/0.12.0/fs-index.html">0.12.0</a></td>
             <td><a href="refs/release/1.0.0.M10/fs-index.html">1.0.0.M10</a></td>
@@ -146,7 +153,7 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.2.x/fs-index.html">1.2.2</a></td>
         </tr>
         <tr>
-            <td>Spring Content Mongo</td>
+            <td>Spring Content Mongo (GridFS)</td>
             <td><a href="refs/release/0.12.0/mongo-index.html">0.12.0</a></td>
             <td><a href="refs/release/1.0.0.M10/mongo-index.html">1.0.0.M10</a></td>
             <td><a href="refs/snapshot/1.0.x/mongo-index.html">1.0.0.M11</a></td>
