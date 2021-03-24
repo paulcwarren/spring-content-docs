@@ -34,7 +34,7 @@ Add the `com.github.paulcwarren:spring-content-renditions-boot-starter` dependen
 `pom.xml`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-with-renditions/complete/pom.xml 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-with-renditions/complete/pom.xml 1-}
 ```
 
 ## Update File
@@ -46,7 +46,7 @@ will be by Spring Content REST.
 `src/main/java/gettingstarted/FileContentStore.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-with-renditions/complete/src/main/java/gettingstarted/File.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-with-renditions/complete/src/main/java/gettingstarted/File.java 1-}
 ```
 
 ## Update FileContentStore
@@ -56,7 +56,7 @@ So that we can fetch renditions make your FileContentStore extend `Renderable`.
 `src/main/java/gettingstarted/FileContentStore.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-with-renditions/complete/src/main/java/gettingstarted/FileContentStore.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-with-renditions/complete/src/main/java/gettingstarted/FileContentStore.java 1-}
 ```
 
 ## Build an executable JAR

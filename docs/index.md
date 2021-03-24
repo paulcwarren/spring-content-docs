@@ -51,13 +51,13 @@ For creating cloud-native, horizontally scaling Content Management Services that
 ## Quick Start
 
 ```xml
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/pom.xml 38-42}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/pom.xml 38-42}
 ```
 
 For a quick taste, look at the following domain object:
 
 ```java
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/java/gettingstarted/File.java 17-33}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/java/gettingstarted/File.java 17-33}
 ```
 
 This defines a simple JPA entity with a few structured data fields; title, authors and keywords and two Spring Content-managed data fields; `@ContentId` and `@ContentLength`.
@@ -67,13 +67,13 @@ The structured data fields are managed in the usual way through a `CrudRepositor
 Content is handled separately with a ContentStore interface:-
 
 ```java
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/java/gettingstarted/FileContentStore.java 5-6}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/java/gettingstarted/FileContentStore.java 5-6}
 ```
 
 This interface extends Spring Content’s `ContentStore` and is typed to the entity class File and the id class String.  Put this code inside a Spring Boot application with `spring-boot-starter-data-jpa` and `spring-content-fs-boot-starter` like this:
 
 ```java
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/java/gettingstarted/SpringContentApplication.java 6-12}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/java/gettingstarted/SpringContentApplication.java 6-12}
 ```
 
 Launch your app and Spring Content (having been autoconfigured by Spring Boot) will automatically craft a concrete set of operations for handling the content associated with this Entity:

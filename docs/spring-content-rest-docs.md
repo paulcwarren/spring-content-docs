@@ -37,7 +37,7 @@ Add the `com.github.paulcwarren:spring-content-rest-boot-starter` dependency.
 `pom.xml`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-rest/complete/pom.xml 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-rest/complete/pom.xml 1-}
 ```
 
 ## Update File Entity
@@ -47,7 +47,7 @@ Add the `@MimeType` marker annotation to our Entity.
 `src/main/java/gettingstarted/File.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-rest/complete/src/main/java/gettingstarted/File.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-rest/complete/src/main/java/gettingstarted/File.java 1-}
 ```
 
 The `mimeType` attribute is updated with the Spring Content  `@MimeType`
@@ -62,7 +62,7 @@ API, update our `FileContentStore` by annotating it with the
 `src/main/java/gettingstarted/FileContentStore.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-rest/complete/src/main/java/gettingstarted/FileContentStore.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-rest/complete/src/main/java/gettingstarted/FileContentStore.java 1-}
 ```
 
 ## Remove FileContentController

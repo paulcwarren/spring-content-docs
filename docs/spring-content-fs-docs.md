@@ -51,7 +51,7 @@ In a project directory of your choosing, create the following subdirectory struc
 `pom.xml`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/pom.xml 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/pom.xml 1-}
 ```
 
 We add several dependencies:-
@@ -76,7 +76,7 @@ Let's define a simple Entity to represent a File.
 `src/main/java/gettingstarted/File.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/java/gettingstarted/File.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/java/gettingstarted/File.java 1-}
 ```
 
 As you would expect we created a standard JPA Entity to capture some metadata about our file; `name` and `summary`.  In addition, because we will be serving these files over the web, we also record `mimeType` so that we can instruct the browser correctly.
@@ -92,7 +92,7 @@ Next, as you would also expect, we create a `CrudRepository` for handling File e
 `src/main/java/gettingstated/FileRepository.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/java/gettingstarted/FileRepository.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/java/gettingstarted/FileRepository.java 1-}
 ```  
 
 ## Create a File Content Store
@@ -102,7 +102,7 @@ Similarly, we then create a `ContentStore` for handling content associated with 
 `src/main/java/gettngstarted/FileContentStore.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/java/gettingstarted/FileContentStore.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/java/gettingstarted/FileContentStore.java 1-}
 ```
 
 Let's investigate this interface:-
@@ -128,7 +128,7 @@ Let's create these endpoints with a simple Controller class.
 `src/main/java/gettingstarted/FileContentController.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/java/gettingstarted/FileContentController.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/java/gettingstarted/FileContentController.java 1-}
 ```
 
 Let's explain this class.  
@@ -150,7 +150,7 @@ Now let's create a really simple angular web front-end for our document list.
 `src/main/resources/static/index.html`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/resources/static/index.html 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/resources/static/index.html 1-}
 ```
 
 This HTML presents a simple list of files using an `ng-repeat` directive and contains a simple form allowing new files to be uploaded.
@@ -158,7 +158,7 @@ This HTML presents a simple list of files using an `ng-repeat` directive and con
 All the interesting code is in the code-behind file so add the following code behind to `src/main/resources/static/files.js`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/resources/static/files.js 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/resources/static/files.js 1-}
 ```
 
 This angular controller has the following functions:-
@@ -182,7 +182,7 @@ Our simple document list app is now complete.  All that remains is to add the us
 `src/main/java/gettingstarted/SpringContentApplication.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/master/spring-content-fs/complete/src/main/java/gettingstarted/SpringContentApplication.java 1-}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/src/main/java/gettingstarted/SpringContentApplication.java 1-}
 ```
 
 ## Build an executable JAR
