@@ -9,6 +9,7 @@ nav:
     - Fulltext: spring-content-with-fulltext-docs.md
     - Versions: spring-content-with-versions-docs.md
     - RBAC: spring-content-with-rbac-docs.md
+    - CMIS: spring-content-with-cmis-docs.md
 plugins:
   - search
   - git-committers:
