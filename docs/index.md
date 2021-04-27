@@ -139,7 +139,7 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="#">n/a</a></td>
             <td><a href="#">n/a</a></td>
             <td><a href="#">n/a</a></td>
-            <td><a href="#">n/a</a></td>
+            <td><a href="refs/release/1.2.3/azure-index.html">1.2.3</a></td>
             <td><a href="refs/snapshot/1.2.x/azure-index.html">1.2.4</a></td>
         </tr>
         <tr>
