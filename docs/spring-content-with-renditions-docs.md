@@ -100,7 +100,7 @@ Open `/tmp/file-1.jpg` and you should see a response like this:
 ## Summary
 
 Congratulations!  You've just written a simple application that uses Spring
-Content and Spring Content Renditions to be able to transform contnet from one format to another.
+Content and Spring Content Renditions to be able to transform content from one format to another.
 
 This guide demonstrates the Spring Content Renditions Module.  This module supports several renderers out-of-the-box satisfying most use cases.  However, you may also
 add your own renderers using the RenditionProvider extension point.  For more details
