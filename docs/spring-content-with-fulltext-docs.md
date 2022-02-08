@@ -69,7 +69,7 @@ Create an entity:
 
 Associate content with that entity:
 
-`curl -X PUT -H 'Content-Type:text/plain' -d 'Hello Spring World!' http://localhost:8080/files/1`
+`curl -X PUT -H 'Content-Type:text/plain' -d 'Hello Spring World!' http://localhost:8080/files/1/content`
 
 Create a second entity:
 
@@ -77,7 +77,7 @@ Create a second entity:
 
 Associate content with the second entity:
 
-`curl -X PUT -H 'Content-Type:text/plain' -d 'Hello Spring Content World!' http://localhost:8080/files/2`
+`curl -X PUT -H 'Content-Type:text/plain' -d 'Hello Spring Content World!' http://localhost:8080/files/2/content`
 
 Perform a fulltext search using the /searchContent endpoint:
 

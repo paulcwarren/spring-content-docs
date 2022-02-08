@@ -75,11 +75,11 @@ Create an entity:
 
 Associate content with that entity:
 
-`curl -X PUT -H 'Content-Type:text/plain' -d 'Hello Spring Content World!' http://localhost:8080/files/1`
+`curl -X PUT -H 'Content-Type:text/plain' -d 'Hello Spring Content World!' http://localhost:8080/files/1/content`
 
 Fetch the content:
 
-`curl -H 'Accept:text/plain' http://localhost:8080/files/1`   
+`curl -H 'Accept:text/plain' http://localhost:8080/files/1/content`   
 
 And you should see a response like this:
 
@@ -91,7 +91,7 @@ Fetch the content again but this time specify that we want a jpeg rendition of t
 the mime-type `image/jpeg` as the accept header.  As it is an image let's save it
 to a file:
 
-`curl -H 'Accept:image/jpeg' http://localhost:8080/files/1 --output /tmp/file-1.jpg`   
+`curl -H 'Accept:image/jpeg' http://localhost:8080/files/1/content --output /tmp/file-1.jpg`   
 
 Open `/tmp/file-1.jpg` and you should see a response like this:
 
