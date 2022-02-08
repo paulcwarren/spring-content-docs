@@ -50,7 +50,7 @@ Add the `@MimeType` marker annotation to our Entity.
 {snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-rest/complete/src/main/java/gettingstarted/File.java 1-}
 ```
 
-The `mimeType` attribute is updated with the Spring Content  `@MimeType`
+The `contentMimeType` attribute is updated with the Spring Content  `@MimeType`
 annotation so that Spring Content REST will update its value on our behalf.
 
 ## Update FileContentStore
@@ -119,7 +119,7 @@ You should recieve a response back from your service that looks something like t
       "href" : "http://localhost:8080/files/1"
     },
     "content" : {
-      "href" : "http://localhost:8080/files/1"
+      "href" : "http://localhost:8080/files/1/content"
     }
   }
 }
@@ -127,7 +127,7 @@ You should recieve a response back from your service that looks something like t
 
 Follow the `content` link relation to add content either using CURL:
 
-`curl -X PUT -H 'Content-Type:text/plain' -d 'Hello Spring Content World!' http://localhost:8080/files/1` 
+`curl -X PUT -H 'Content-Type:text/plain' -d 'Hello Spring Content World!' http://localhost:8080/files/1/content` 
 
 Or, if you prefer, by uploading the content via postman:
 
@@ -144,7 +144,7 @@ Spring Content REST supports PUT and POST requests with the Content-Type header 
 
 Lasty, verify the content was uploaded by requesting it again:
 
-`curl -H 'Accept:text/plain' http://localhost:8080/files/1`
+`curl -H 'Accept:text/plain' http://localhost:8080/files/1/content`
 
 You should see you content returned as follows:
 
