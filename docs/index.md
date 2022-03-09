@@ -33,7 +33,7 @@ For creating cloud-native, horizontally scaling Content Management Services that
 ## Modules
 
 - Commons - Core content management concepts underpinning every other module
-- S3 - Store support for Amazon S3, and any other S3-compliant object storage  
+- S3 - Store support for Amazon S3, and any other S3-compliant object storage.  Also supports reactive access.  
 - Filesystem - Store support for the Filesystem storage
 - Mongo - Store support for Mongo's GridFS storage
 - JPA - Store support for JPA BLOB storage
