@@ -119,8 +119,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.0.x/s3-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.1.0.M5/s3-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/s3-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/s3-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/s3-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/s3-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/s3-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <td>Spring Content GCS</td>
@@ -129,8 +129,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="#">n/a</a></td>
             <td><a href="#">n/a</a></td>
             <td><a href="#">n/a</a></td>
-            <td><a href="refs/release/2.0.0/gcs-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/gcs-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/gcs-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/gcs-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <td>Spring Content Azure Storage</td>
@@ -139,8 +139,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="#">n/a</a></td>
             <td><a href="#">n/a</a></td>
             <td><a href="#">n/a</a></td>
-            <td><a href="refs/release/2.0.0/azure-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/azure-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/azure-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/azure-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <td>Spring Content Filesystem</td>
@@ -149,8 +149,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.0.x/fs-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.1.0.M5/fs-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/fs-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/fs-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/fs-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/fs-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/fs-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <td>Spring Content Mongo (GridFS)</td>
@@ -159,8 +159,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.0.x/mongo-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.1.0.M5/mongo-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/mongo-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/mongo-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/mongo-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/mongo-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/mongo-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <td>Spring Content JPA</td>
@@ -169,8 +169,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.0.x/jpa-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.1.0.M5/jpa-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/jpa-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/jpa-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/jpa-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/jpa-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/jpa-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <th colspan=9>Renditions</th>
@@ -182,8 +182,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>-</td>
             <td><a href="refs/release/1.1.0.M5/renditions-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/renditions-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/renditions-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/renditions-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/renditions-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/renditions-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <th colspan=9>Versioning</th>
@@ -195,8 +195,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.0.x/jpaversions-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.1.0.M5/jpaversions-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/jpaversions-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/jpaversions-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/jpaversions-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/jpaversions-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/jpaversions-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <th colspan=9>Fulltext Indexing</th>
@@ -208,8 +208,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.0.x/solr-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.1.0.M5/solr-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/solr-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/solr-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/solr-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/solr-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/solr-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <td>Spring Content Elasticsearch</td>
@@ -218,8 +218,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.0.x/elasticsearch-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.1.0.M5/elasticsearch-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/elasticsearch-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/elasticsearch-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/elasticsearch-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/elasticsearch-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/elasticsearch-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <th colspan=9>APIs</th>
@@ -231,8 +231,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.0.x/rest-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.1.0.M5/rest-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/rest-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/rest-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/rest-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/rest-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/rest-index.html">2.2.0</a></td>
         </tr>
         <tr>
             <td>Spring Content CMIS</td>
@@ -241,8 +241,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td><a href="refs/snapshot/1.0.x/cmis-index.html">1.0.0.M11</a></td>
             <td><a href="refs/release/1.1.0.M5/cmis-index.html">1.1.0.M5</a></td>
             <td><a href="refs/snapshot/1.1.x/cmis-index.html">1.1.0.M6</a></td>
-            <td><a href="refs/release/2.0.0/cmis-index.html">2.0.0</a></td>
-            <td><a href="refs/snapshot/main/cmis-index.html">2.1.0</a></td>
+            <td><a href="refs/release/2.1.0/cmis-index.html">2.1.0</a></td>
+            <td><a href="refs/snapshot/main/cmis-index.html">2.2.0</a></td>
         </tr>
     </tbody>
 </table>
