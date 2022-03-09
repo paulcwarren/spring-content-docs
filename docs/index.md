@@ -10,6 +10,8 @@ For creating cloud-native, horizontally scaling Content Management Services that
 
 - Associate content with Spring Data entities
 
+- Reactive content access (S3)
+
 - Full-text search (Solr and Elasticsearch)
 
 - Content rendition and transformation
