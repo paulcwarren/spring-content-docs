@@ -80,11 +80,11 @@ This interface extends Spring Content’s `ContentStore` and is typed to the ent
 
 Launch your app and Spring Content (having been autoconfigured by Spring Boot) will automatically craft a concrete set of operations for handling the content associated with this Entity:
 
-- `setContent(S property, InputStream content)`
+- `S setContent(S entity, InputStream content)`
 
-- `InputStream getContent(S property)`
+- `InputStream getContent(S entity)`
 
-- `unsetContent(S property)`
+- `S unsetContent(S entity)`
 
 For more, check out our initial [Getting Started Guide](spring-content-fs-docs.md), or watch one of our SpringOne talks [2016](https://bit.ly/springone-vid), [2017 @11mins](https://www.youtube.com/watch?v=YtNvHTwHhRY) and [2018](https://www.youtube.com/watch?v=qyIMHWR40eA&t=52s).
 
