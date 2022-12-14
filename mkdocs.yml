@@ -10,8 +10,9 @@ nav:
     - Versions: spring-content-with-versions-docs.md
     - RBAC: spring-content-with-rbac-docs.md
     - CMIS: spring-content-with-cmis-docs.md
+    - Encryption: spring-content-with-encryption-docs.md
 plugins:
   - search
   - git-committers:
       repository: paulcwarren/spring-content
-      branch: master
+      branch: main
