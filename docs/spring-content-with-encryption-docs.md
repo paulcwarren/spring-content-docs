@@ -26,7 +26,7 @@ using Git: `git clone https://github.com/paulcwarren/spring-content-gettingstart
 - We are going to start where Getting Started with Spring Content REST API leaves off so
  `cd` into `spring-content-gettingstarted/spring-content-rest/complete`
 
-When you’re finished, you can check your results against the code in
+When you're finished, you can check your results against the code in
 `spring-content-gettingstarted/spring-content-with-encryption/complete`.
 
 ## Update dependencies
@@ -47,7 +47,9 @@ First we add a simple class that creates and starts a vault test container upon 
 
 `src/main/java/gettingstarted/VaultContainerSupport.java`
 
+```
 {snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-with-encryption/complete/src/main/java/gettingstarted/VaultContainerSupport.java 1-}
+```
 
 
 ## Configuration
@@ -56,7 +58,9 @@ Next we need to introduce a small `Configuration` class to provide a vault endpo
 
 `src/main/java/gettingstarted/SpringContentApplication.java`
 
+```
 {snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-with-encryption/complete/src/main/java/gettingstarted/SpringContentApplication.java 1-}
+```
 
 Points to note:
 - the `clientAuthentication` references the `root-token`
@@ -70,7 +74,7 @@ Update File to add the new content property attribute called `key` that will sto
 `src/main/java/gettingstarted/File.java`
 
 ```
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-with-encryption/complete/src/main/java/gettingstarted/File.java 1-33}
+{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-with-encryption/complete/src/main/java/gettingstarted/File.java 1-}
 ```
 
 ## Update FileContentStore
