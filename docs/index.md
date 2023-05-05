@@ -53,7 +53,11 @@ For creating cloud-native, horizontally scaling Content Management Services that
 ## Quick Start
 
 ```xml
-{snippet: https://raw.githubusercontent.com/paulcwarren/spring-content-gettingstarted/main/spring-content-fs/complete/pom.xml 38-42}
+<dependency>
+    <groupId>com.github.paulcwarren</groupId>
+    <artifactId>spring-content-fs-boot-starter</artifactId>
+    <version>3.0.2</version>
+</dependency>
 ```
 
 For a quick taste, look at the following domain object:
