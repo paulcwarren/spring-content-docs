@@ -1,4 +1,4 @@
-# Getting Started with Spring Content and CMIS
+# Getting Started with Spring Content and CMIS (Spring Content 2.x only - Deprecated)
 
 ## What you'll build
 
