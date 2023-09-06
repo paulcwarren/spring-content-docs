@@ -56,7 +56,7 @@ For creating cloud-native, horizontally scaling Content Management Services that
 <dependency>
     <groupId>com.github.paulcwarren</groupId>
     <artifactId>spring-content-fs-boot-starter</artifactId>
-    <version>3.0.2</version>
+    <version>3.0.5</version>
 </dependency>
 ```
 
@@ -117,43 +117,43 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>Spring Content S3</td>
             <td><a href="refs/release/2.9.0/s3-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/s3-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/s3-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/s3-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/s3-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/s3-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <td>Spring Content GCS</td>
             <td><a href="refs/release/2.9.0/gcs-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/gcs-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/gcs-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/gcs-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/gcs-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/gcs-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <td>Spring Content Azure Storage</td>
             <td><a href="refs/release/2.9.0/azure-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/azure-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/azure-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/azure-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/azure-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/azure-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <td>Spring Content Filesystem</td>
             <td><a href="refs/release/2.9.0/fs-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/fs-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/fs-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/fs-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/fs-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/fs-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <td>Spring Content Mongo (GridFS)</td>
             <td><a href="refs/release/2.9.0/mongo-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/mongo-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/mongo-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/mongo-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/mongo-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/mongo-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <td>Spring Content JPA</td>
             <td><a href="refs/release/2.9.0/jpa-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/jpa-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/jpa-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/jpa-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/jpa-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/jpa-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <th colspan=9>Renditions</th>
@@ -162,8 +162,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>Spring Content Renditions</td>
             <td><a href="refs/release/2.9.0/renditions-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/renditions-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/renditions-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/renditions-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/renditions-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/renditions-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <th colspan=9>Versioning</th>
@@ -172,8 +172,8 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>Spring Versions JPA</td>
             <td><a href="refs/release/2.9.0/jpaversions-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/jpaversions-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/jpaversions-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/jpaversions-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/jpaversions-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/jpaversions-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <th colspan=9>Fulltext Indexing</th>
@@ -182,15 +182,15 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>Spring Content Solr</td>
             <td><a href="refs/release/2.9.0/solr-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/solr-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/solr-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/solr-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/solr-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/solr-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <td>Spring Content Elasticsearch</td>
             <td><a href="refs/release/2.9.0/elasticsearch-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/elasticsearch-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/elasticsearch-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/elasticsearch-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/elasticsearch-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/elasticsearch-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <th colspan=9>APIs</th>
@@ -199,15 +199,15 @@ For more, check out our initial [Getting Started Guide](spring-content-fs-docs.m
             <td>Spring Content REST</td>
             <td><a href="refs/release/2.9.0/rest-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/rest-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/rest-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/rest-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/rest-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/rest-index.html">3.0.6</a></td>
         </tr>
         <tr>
             <td>Spring Content CMIS</td>
             <td><a href="refs/release/2.9.0/cmis-index.html">2.9.0</a></td>
             <td><a href="refs/snapshot/2.x.x/cmis-index.html">2.10.0</a></td>
-            <td><a href="refs/release/3.0.2/cmis-index.html">3.0.2</a></td>
-            <td><a href="refs/snapshot/main/cmis-index.html">3.1.0</a></td>
+            <td><a href="refs/release/3.0.5/cmis-index.html">3.0.5</a></td>
+            <td><a href="refs/snapshot/main/cmis-index.html">3.0.6</a></td>
         </tr>
     </tbody>
 </table>
