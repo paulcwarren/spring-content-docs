@@ -16,7 +16,7 @@ $PWD/scripts/snippet.sh $PWD/site
 tmpdir=`mktemp -d 2>/dev/null || mktemp -d -t 'sctmpdir'`
 mkdir -p $tmpdir
 
-git clone https://github.com/paulcwarren/spring-content $tmpdir
+git clone git@github.com:paulcwarren/spring-content $tmpdir
 pushd $tmpdir
   # hack to avoid duet-prepare-commit-msg is not a git command
   rm .git/hooks/prepare-commit-msg
